@@ -1,0 +1,16 @@
+.text-replace {
+  width: 0px;
+  height: 0px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mirror-image {
+  transform: scaleX(-1);
+}
+
+.bg-image-center {
+  background-position: center;
+  background-size: cover;
+}

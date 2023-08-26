@@ -9,9 +9,360 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="container border border-1 p-5">
-      <p class="fs-6 m-5 p-6">index</p>
-    </div>
+    <!-- 
+      1. 文字RWD 變數設定
+      2. button 變數設定
+      3. 字體尚未下載
+     -->
+    <main class="py-18 pt-lg-0">
+      <div class="mb-16 mb-lg-20">
+        <div style="background-image: url('../assets/images/banner.jpg');" class="banner-img mirror-image bg-image-center position-relative">
+          <div class="container mirror-image h-100 d-flex flex-column justify-content-center align-items-start">
+            <h2 class="banner-title">夢想是起點<br>但創作沒有終點</h2>
+            <p class="fs-5">知音就在 coMusic，最美好的音樂社群平台</p>
+            <button class="btn bg-primary py-2 px-10">會員登入</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 即時熱門 -->
+      <div class="mb-16 mb-lg-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 mb-16 mb-lg-0">
+              <div class="h-100 d-flex flex-column">
+                <h4 class="mb-4">即時熱門</h4>
+                <table class="table align-middle text-center">
+                  <thead>
+                    <tr class="text-gray-400">
+                      <td width="10%">#</td>
+                      <td class="table-hidden"></td>
+                      <td></td>
+                      <td class="text-start table-full">標題</td>
+                      <td class="table-hidden"></td>
+                      <td class="text-end table-hidden">次數</td>
+                      <td class="table-hidden">時間</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="table-hidden">
+                        <span class="material-icons">remove</span>
+                      </td>
+                      <td>
+                        <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="">
+                      </td>
+                      <td class="text-start">
+                        <p class="my-0 py-0 mb-1">八寶公主</p>
+                        <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                      </td>
+                      <td class="table-hidden">
+                        <div class="d-flex gap-2">
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                          </button>
+                          <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                            <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="text-end table-hidden">51167</td>
+                      <td class="table-hidden">3:12</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center mt-auto">
+                  <button class="btn btn-outline-gray-900 py-2 px-10">點我聽更多</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column gap-4">
+              <div class="border border-gray-200 rounded-5 p-8 d-flex flex-column">
+                <h4 class="mb-4">今日推薦</h4>
+                <img src="../assets/images/today.jpg" class="today-img mb-4" alt="">
+                <div class="d-flex">
+                  <div>
+                    <p class="mb-2">今天可不可以不回家</p>
+                    <p class="mb-0">LUCKY-RIRI</p>
+                  </div>
+                  <div class="ms-auto d-flex gap-2">
+                    <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                      <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                    </button>
+                    <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                      <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                    </button>
+                  </div>
+                </div>
+                <button class="h-100 btn btn-primary py-2 px-10 mt-4">點我聽更多</button>
+              </div>
+              <div class="border border-gray-200 rounded-5 p-8 d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                  <h4 class="mb-4">來點驚喜...</h4>
+                  <button class="border border-gray-900 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                    <span class="material-icons text-gray-900" style="font-size: 20px;">shuffle</span>
+                  </button>
+                </div>
+                <img src="../assets/images/surprise.jpg" class="today-img mb-4" alt="">
+                <div class="d-flex">
+                  <div>
+                    <p class="mb-2">巴賴Balai（排灣傳統織布時尚服裝秀_走秀混音作品）</p>
+                    <p class="mb-0">巴賴 (Balai)</p>
+                  </div>
+                  <div class="ms-auto d-flex gap-2">
+                    <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                      <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                    </button>
+                    <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
+                      <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                    </button>
+                  </div>
+                </div>
+                <button class="h-100 btn btn-primary py-2 px-10 mt-4">點我聽更多</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 探索 -->
+      <div class="mb-16 mb-lg-20">
+        <div class="container">
+          <h4>探索</h4>
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- 即時評論 -->
+    </main>
 
     <%- include('./layout/footer'); -%>
 
