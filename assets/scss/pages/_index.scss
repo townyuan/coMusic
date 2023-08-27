@@ -1,3 +1,45 @@
-.index-title {
-  font-size: 100px;
+.banner-img{
+  height: 266px;
+
+  @include media-breakpoint-up(lg){
+    height: 800px;
+  }
+}
+
+.banner-title{
+  font-size: 28px;
+
+  @include media-breakpoint-up(lg){
+    font-size: 64px;
+  }
+}
+
+.hot-img{
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+}
+
+.table-hidden{
+  @include media-breakpoint-down(lg){
+    display: none;
+  }
+}
+
+.table-full{
+  width: 60%;
+
+  @include media-breakpoint-up(lg){
+    width: 40%;
+  }
+}
+
+.today-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  @include media-breakpoint-up(lg){
+    height: 330px;
+  }
 }
