@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coMusic | 首頁</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>coMusic | 首頁</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
 
     <!-- 
       1. 文字 RWD 變數設定
@@ -354,18 +356,181 @@
       <!-- 探索 -->
       <div class="mb-16 mb-lg-20">
         <div class="container">
-          <h4>探索</h4>
-          <div class="row">
-            
+          <h2 class="fs-6 text-center text-lg-start mb-4 mb-lg-10">探索</h2>
+          <div class="mb-8">
+            <div class="d-flex justify-content-center justify-content-lg-between align-items-center mb-4 mb-lg-10">
+              <h3 class="fs-4h">音樂類型</h3>
+              <a href="#" class="d-none d-lg-block btn btn-outline-gray-900 py-2 px-10">更多音樂</a>
+            </div>
+            <ul class="row row-cols-2 row-cols-lg-4 gy-6">
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover music-type-img" src="../assets/images/music-type-1.jpg" alt="西洋流行音樂">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">西洋流行音樂</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover object-position-top music-type-img" src="../assets/images/music-type-2.jpg" alt="韓風流行">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">韓風流行</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover position-position-10 music-type-img" src="../assets/images/music-type-3.jpg" alt="舞曲/電子樂">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">舞曲/電子樂</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover music-type-img" src="../assets/images/music-type-4.jpg" alt="R&B">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">R&B</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover object-position-10 music-type-img" src="../assets/images/music-type-5.jpg" alt="健身">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">健身</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover music-type-img" src="../assets/images/music-type-6.jpg" alt="拉丁音樂">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">拉丁音樂</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover music-type-img" src="../assets/images/music-type-7.jpg" alt="民族/奏樂">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">民族/奏樂</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                  <img class="w-100 object-fit-cover music-type-img" src="../assets/images/music-type-8.jpg" alt="原聲帶">
+                  <p class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">原聲帶</p>
+                </a>
+              </li>
+            </ul>
+            <div class="d-lg-none text-center mt-4">
+              <a href="#" class="btn btn-outline-gray-900 py-2 px-10">更多音樂</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="d-flex justify-content-center justify-content-lg-between align-items-center mb-4 mb-lg-10">
+              <h3 class="fs-4h">音樂人</h3>
+              <a href="#" class="d-none d-lg-block btn btn-outline-gray-900 py-2 px-10">更多音樂人</a>
+            </div>
+            <ul class="row row-cols-2 row-cols-lg-6 gy-6">
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-1.jpg" alt="森森鈴蘭">
+                  <p class="text-black text-center">森森鈴蘭</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-2.jpg" alt="沈默紳士">
+                  <p class="text-black text-center">沈默紳士</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-3.jpg" alt="自由人">
+                  <p class="text-black text-center">自由人</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-4.jpg" alt="未知過敏原">
+                  <p class="text-black text-center">未知過敏原</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-5.jpg" alt="自言自語 MurMur">
+                  <p class="text-black text-center">自言自語 MurMur</p>
+                </a>
+              </li>
+              <li class="col">
+                <a href="#" class="d-block">
+                  <img class="w-100 object-fit-cover musican-img rounded-20 rounded-lg-30 mb-4" src="../assets/images/music-musican-6.jpg" alt="旅行的人">
+                  <p class="text-black text-center">旅行的人</p>
+                </a>
+              </li>
+            </ul>
+            <div class="d-lg-none text-center mt-4">
+              <a href="#" class="btn btn-outline-gray-900 py-2 px-10">更多音樂人</a>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 即時評論 -->
+      <div class="mb-16 mb-lg-20">
+        <div class="container">
+          <h2 class="fs-6 text-center text-lg-start mb-4 mb-lg-10">即時評論</h2>
+
+          <div class="swiper commentSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容1
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容2
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容3
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容4
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容5
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容6
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容7
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容8
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card rounded-30" style="height: 600px">
+                  我是內容9
+                </div>
+              </div>
+            </div>
+            <div class="swiper-comment-btn-next"></div>
+            <div class="swiper-comment-btn-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
