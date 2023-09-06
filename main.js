@@ -1,19 +1,42 @@
-import 'swiper/css/bundle';
-
+import 'swiper/css/bundle'; // 覆蓋 bootstrap
 import './assets/scss/all.scss';
 import './node_modules/bootstrap/dist/js/bootstrap.min.js';
-
 import Swiper from 'swiper/bundle';
 
 
-// init Swiper:
+// News swiper
+const newsSwiper = new Swiper(".newSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  centeredSlides: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    clickable: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+})
+
+
+// Comment swiper
 const commentSwiper = new Swiper(".commentSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   
   breakpoints: {
-    576: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 24,
     },
@@ -22,14 +45,18 @@ const commentSwiper = new Swiper(".commentSwiper", {
       spaceBetween: 24,
     }
   },
+
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
+
   navigation: {
-    nextEl: ".swiper-comment-btn-next",
-    prevEl: ".swiper-comment-btn-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    clickable: true,
   },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
