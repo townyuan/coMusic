@@ -11,16 +11,20 @@
 @import "../../node_modules/bootstrap/scss/maps"; /* with util */
 @import "./utils/util"; /* with maps */
 
+
 @import "../../node_modules/bootstrap";
 
 
 /* Custom */
 @import "./base/base";
 
+@import "./utils/typography";
 @import "./utils/helper";
 
 @import "./components/img";
 @import "./components/swiper";
+@import "./components/button";
+@import "./components/validation";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";

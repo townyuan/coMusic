@@ -162,6 +162,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
@@ -169,7 +170,8 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
-        auto: auto
+        auto: auto,
+        fit-content: fit-content, // *custom
       )
     ),
     "max-width": (
@@ -450,6 +452,18 @@ $utilities: map-merge(
       class: gap,
       values: $spacers
     ),
+    "row-gap": ( // *custom
+      responsive: true,
+      property: row-gap,
+      class: row-gap,
+      values: $spacers
+    ),
+    "column-gap": ( // *custom
+      responsive: true,
+      property: column-gap,
+      class: column-gap,
+      values: $spacers
+    ),
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
@@ -460,7 +474,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
-      responsive: true,
+      responsive: true, // *custom
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -480,7 +494,7 @@ $utilities: map-merge(
         bold: $font-weight-bold,
         semibold: $font-weight-semibold,
         bolder: $font-weight-bolder,
-        100: 100,
+        100: 100, // *custom
         200: 200,
         300: 300,
         400: 400,
@@ -488,7 +502,7 @@ $utilities: map-merge(
         600: 600,
         700: 700,
         800: 800,
-        900: 900, // *custom
+        900: 900,
       )
     ),
     "line-height": (
@@ -569,7 +583,7 @@ $utilities: map-merge(
       property: background-color,
       class: bg,
       local-vars: (
-        "bg-opacity": 1
+        "bg-opacity": 1,
       ),
       values: map-merge(
         $utilities-bg-colors,
@@ -586,6 +600,7 @@ $utilities: map-merge(
         10: .1,
         25: .25,
         50: .5,
+        65: .65,
         75: .75,
         100: 1
       )
@@ -673,6 +688,14 @@ $utilities: map-merge(
         10: 50% 10%,
       )
     ),
+    "backdrop-filter": ( // *custom
+      property: backdrop-filter,
+      class: filter,
+      values: (
+        blur-5: blur(5px),
+        blur-10: blur(10px),
+      )
+    )
     // scss-docs-end utils-visibility
   ),
   $utilities
