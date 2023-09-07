@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>coMusic | 首頁</title>
+  <%- include('./layout/meta'); -%>
+  <title>coMusic | 夢想是起點 但創作沒有終點</title>
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
 
     <!-- 
+      待解決
+      1. 字體尚未下載
+
+      待調整
       1. 文字 RWD 變數設定
       2. button 變數設定
-      3. 字體尚未下載
      -->
-    <main class="py-18 pt-lg-0">
+    <main class="page-top overflow-hidden">
+      <!-- banner -->
       <div class="mb-16 mb-lg-20">
         <div style="background-image: url('../assets/images/banner.jpg');" class="banner-img mirror-image bg-image-center position-relative">
           <div class="container mirror-image h-100 d-flex flex-column justify-content-center align-items-start">
@@ -24,6 +26,37 @@
             <p class="fs-5">知音就在 coMusic，最美好的音樂社群平台</p>
             <button class="btn bg-primary py-2 px-10">會員登入</button>
           </div>
+        </div>
+      </div>
+
+      <!-- hot news -->
+      <!-- 待解決 1. 無縫輪播 -->
+      <div class="mb-16 mb-lg-20 overflow-hidden">
+        <div class="container position-relative">
+          <h2 class="fs-6 text-center text-lg-start mb-4 mb-lg-10">即時評論</h2>
+
+          <div class="swiper newSwiper overflow-visible">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="https://s3-alpha-sig.figma.com/img/d6d8/1b4c/5c4fa3ff51ab37b9e1e9251717cca969?Expires=1694995200&Signature=PD4M8sVu61kE4EJ3FeIjz6V11Wj0wgFWEsodU~RMhH8QShZvJ920Cv3cuAO0qbNYKSAgIh6Vfo9tA7ERSbpKXYCWouNWeyr3qVLqdnxtDFqC2vDoWHoewquJ6KW2Ye~2YUcHiqRrMjKODy8f~7wS8xOl9556Fsy8xUswvRLQ~4nfIzvGOGI2gxt0H9vhQEI3JD3ZViP91KP3aFMq~-vDZppgyVE1t4zc7YIM9DgcOnHqg2Z50biWssA-8J8UjywiL~aW8GxitwSyKWaYsO9eXVTIhb5~BjGa-genUls5cbV5SQk4MGZ5zxDbjDcS5Indgx-6eVTAe0EZSLtOFx7xGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="https://s3-alpha-sig.figma.com/img/5959/62c3/a67aaae7ba9a02a596ef0ca65690e2ea?Expires=1694995200&Signature=kMtNsb3lAec7LOAr0l0WpDmsFhXTHd4S74kqye0ScdPNdO0dttGajkcFUPlPw7S66uPHRMcj9pYKfmAD5bNK13s9yLDsE2Y7wJmOzZ4m5lp7ByqeBqSZI8JLs6swKV21BwrcZngum7mG1xFtsSRN2v2FjUiY2LCgS5JTYXC3FvXhjtxnj4o-zHfNA8lIz6jNaFapuXE2HsiRolsVxfzKMQWWNEv2tSbj~Mu5KzY1rfWMOVhJOmzCRXwmouRetqKrZpyKV-GR7WKa-C7~pb0En7qA7sZhx2jGlSxYRf4u-nZTRjtHQ8l3erU93wedeYrh~xXYZC4kfcOUVcKQTNa9bQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="https://s3-alpha-sig.figma.com/img/16e9/725e/866d71f50f821680cf81daf95545c2d1?Expires=1694995200&Signature=FrdBQ16dcNaxWG7FBrGH7cNGLLq8HWwesGnysI8lCMmyZ-IsX5VuV6QLd1OCcP~lqf6yCA94klsx5f0RrU05S~6jfcNSvS13XfDGZOJr7JGx2UYLc~b0iGu5HiYxZ2HOIo5-S77LwOgRWuZYg5ODfldSL4xbF2415UmL-WynWoNuP4hXLG2qZniIcB03FEln9WShLdE0KI0Duj9i~URyvikMMUE4hte1Z-pNLUdC7I7ZpYESfjvWJvoaZGeMy-2DwSNdYOiRbNbURe4laUhrozYajK3h7kOt~Af6cpk4mEEJ7qkqlBhsAhgSKeppSd0o3eH7k-rwRwedBquwzHoxrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -468,62 +501,296 @@
       </div>
 
       <!-- 即時評論 -->
-      <div class="mb-16 mb-lg-20">
-        <div class="container">
+      <div class="mb-16 mb-lg-20 overflow-hidden">
+        <div class="container position-relative">
           <h2 class="fs-6 text-center text-lg-start mb-4 mb-lg-10">即時評論</h2>
 
           <div class="swiper commentSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容1
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容2
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容3
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容4
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容5
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容6
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容7
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容8
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card rounded-30" style="height: 600px">
-                  我是內容9
+              </li>
+              <li class="swiper-slide">
+                <div class="card rounded-30">
+                  <div class="p-4">
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <div class="ms-8">
+                        <p class="fs-6">劉德華</p>
+                        <span class="text-gray-400">27分鐘前</span>
+                      </div>
+                    </div>
+                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <div class="ms-6">
+                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
+                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <div class="d-flex gap-2">
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                            </button>
+                            <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-gray-100" style="width: 28px;height: 28px">
+                              <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-comment-btn-next"></div>
-            <div class="swiper-comment-btn-prev"></div>
+              </li>
+            </ul>
             <div class="swiper-pagination"></div>
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </main>

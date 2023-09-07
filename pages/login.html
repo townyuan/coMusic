@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./layout/meta'); -%>
+  <title>coMusic | 登入</title>
+</head>
+
+<body>
+  <%- include('./layout/header-logo'); -%>
+
+    <main class="page-top">
+      <div class="row g-0">
+        
+        <div class="col-6 col-lg-6">
+          <div class="py-16">
+            <div class="row justify-content-center g-0">
+              <div class="col-6">
+                <div class="text-center">
+                  <h2 class="mb-6 mb-lg-8 fs-6">會員登入</h2>
+                </div>
+                <form action="login.html">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                </form>
+                <hr>
+                <div class="d-flex flex-column">
+                  <a href="#" class="btn btn-outline-gray-900 mb-2 py-2 rounded-5">
+                    <i class="bi bi-google me-3"></i>  
+                    使用 Google 帳戶繼續
+                  </a>
+                  <a href="#" class="btn btn-outline-gray-900 mb-2 py-2 rounded-5">
+                    <i class="bi bi-facebook me-3"></i>
+                    使用 Facebook 帳戶繼續
+                  </a>
+                  <a href="#" class="btn btn-outline-gray-900 mb-2 py-2 rounded-5">
+                    <i class="bi bi-apple me-3"></i>
+                    使用 Apple 帳戶繼續
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img class="w-100 h-fit object-fit-cover" src="../assets/images/music-type-8.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- 登入頁面 -->
+      <!-- <div class="container py-15">
+        <div class="row justify-content-evenly">
+          <div class="col-lg-5">
+            <img class="w-100 object-fit-cover rounded-30" style="height: 420px" src="../assets/images/music-type-8.jpg" alt="">
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="text-center">
+              <h2 class="mb-6 mb-lg-8 fs-6">會員登入</h2>
+            </div>
+            <div class="d-flex flex-column">
+              <a href="#" class="btn btn-main border-gray-400 rounded-5 mb-2 py-2">
+                <img src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt="">
+                使用 Google 帳戶繼續
+              </a>
+              <a href="#" class="btn btn-main border-gray-400 rounded-5 mb-2 py-2">
+                <img src="https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg" alt="">
+                使用 Facebook 帳戶繼續
+              </a>
+              <a href="#" class="btn btn-main border-gray-400 rounded-5 mb-2 py-2">
+                <img class="me-2" style="height: 20px; width: 20px"
+                    src="https://s3-alpha-sig.figma.com/img/738c/e938/834eb0739b5751f1761447d90d1140c3?Expires=1694390400&Signature=XxM3ALiK7P2IyyhPfOnWRnDpQGPFYDP1cvjfcG42i7di7smGsj8~KZDfypNuEaQk7VDl0zvv-dv9f7bCgyMkITihnZypesUGP~wUSPousza4AY4iEJ-W84VvReo4lyFUSupKllHUj2-IR7FeLCRdrZX1I4SPTha40wlcw~jjPn~Rj4PH5tjBGUyIz5BHUU8ZmpVmmdHlhdIO9acGPBVKt0TSYHvi8PYLSqYm0aOKZ2P6wLy-p1bH8RSHv2PaN6QolYs-NXZ6Ze2gipXo9EAJ28DU9x97eG9n6HqqIDMPTs03fYEYqvPPPTWg6NQvCD2pqdzvB~7c453Lj~I37opUhA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="apple">
+                使用 Apple 帳戶繼續
+              </a>
+            </div>
+            <hr>
+            <form action="login.html">
+
+            </form>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <!-- <%- include('./layout/footer'); -%> -->
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
