@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coMusic | 探索</title>
+    <!--google icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -15,22 +18,135 @@
         <main class="pt-20">
 
             <!--音樂類型-->
-            <div class="mt-6 mb-16 mb-lg-20">
+            <div class="mt-4 mt-lg-8 mb-16 mb-lg-20">
                 <div class="container">
-                    <h2 class="fs-6 text-center text-lg-start mb-4 mb-lg-10">探索</h2>
-                    <div class="mb-4">
-                        <h3 class="fs-4h">音樂類型</h3>
-                        <ul class="row">
-                            <li class="col-lg-4">
+                    <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">音樂類型</h2>
+                </div>
+                <div class="container position-relative">
+                    <div class="swiper searchSwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
                                 <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
-                                    <img src="/assets/images/music-type-1.jpg" alt="西洋流行音樂">
-                                    <p>西洋流行音樂</p>
+                                    <img src="/assets/images/music-type-1.jpg" alt="西洋流行音樂"
+                                        class="w-100 object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        西洋流行音樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-2.jpg" alt="韓風流行"
+                                        class="w-100 object-fit-cover object-position-top" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        韓風流行</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-3.jpg" alt="舞曲/電子樂"
+                                        class="w-100 object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        舞曲/電子樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-4.jpg" alt="R&B"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        R&B</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-5.jpg" alt="健身"
+                                        class="w-100 music-type-img object-fit-cover object-position-10"
+                                        style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        健身</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-6.jpg" alt="拉丁音樂"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        拉丁音樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-7.jpg" alt="民族/奏樂"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        民族/奏樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-8.jpg" alt="原聲帶"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        原聲帶</p>
                                 </a>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="swiper-button-prev">
+                        <span class="material-symbols-outlined swiper-btn">
+                            chevron_left
+                        </span>
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="material-symbols-outlined swiper-btn">
+                            chevron_right
+                        </span>
+                    </div>
                 </div>
             </div>
+
+            <!--熱門合輯-->
+            <div class="mb-16 mb-lg-20">
+                <div class="container">
+                    <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">熱門合輯</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                <img src="/assets/images/music-musican-4.jpg" alt="comusic 推薦專輯封面"
+                                    class="w-100 object-fit-cover hit-img">
+                                <button class="btn position-absolute top-50 start-50 translate-middle" type="play">
+                                    <span class="material-symbols-outlined bg-primary">
+                                        play_circle
+                                    </span>
+                                </button>
+
+                                <h4
+                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center">
+                                    coMusic推薦</h4>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
 
 
         </main>
