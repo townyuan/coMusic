@@ -1,19 +1,17 @@
 import 'swiper/css/bundle';
-
 import './assets/scss/all.scss';
 import './node_modules/bootstrap/dist/js/bootstrap.min.js';
-
 import Swiper from 'swiper/bundle';
 
 
-// init Swiper:
+// search Swiper:
 const searchSwiper = new Swiper(".searchSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
 
   breakpoints: {
-    576: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 24,
     },
@@ -33,4 +31,16 @@ const searchSwiper = new Swiper(".searchSwiper", {
     prevEl: ".swiper-btn-prev",
     clickable: true,
   },
+});
+
+//scrollbar
+const hitSwiper = new Swiper(".hitSwiper", {
+  spaceBetween: 24,
+  //滑鼠中間滾輪可滑動
+  mousewheel: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true
+  },
+  slidesPerView: "auto",
 });

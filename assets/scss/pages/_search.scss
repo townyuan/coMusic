@@ -1,22 +1,6 @@
-// 箭頭
-.swiper-button-next,
-.swiper-button-prev {
-    background: #fff;
-    width: 48px;
-    height: 48px;
-    border: 1px solid $gray-400;
-    border-radius: 50%;
-
-    &::after {
-        content: '';
-    }
-}
+//swiper
 
 
-.swiper-btn {
-    font-size: 32px;
-    color: $gray-400;
-}
 
 .hit-img {
     height: 300px;
@@ -24,4 +8,17 @@
     @include media-breakpoint-up(lg) {
         height: 330px;
     }
+}
+
+.play-btn {
+    font-size: 72px;
+}
+
+//swiper-scrollbar
+.swiper-scrollbar {
+    background: $gray-600;
+}
+
+.swiper-scrollbar-drag {
+    background: $primary !important;
 }
