@@ -89,3 +89,14 @@ $('.needs-validation').each(function(index) {
 
 
 // 
+//scrollbar
+const hitSwiper = new Swiper(".hitSwiper", {
+  spaceBetween: 24,
+  //滑鼠中間滾輪可滑動
+  mousewheel: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true
+  },
+  slidesPerView: "auto",
+});
