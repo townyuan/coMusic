@@ -37,3 +37,12 @@
     height: 196px;
   }
 }
+
+.mirror-image{
+  transform:scaleX(-1);
+}
+
+.bg-image-center{
+  background-position: center;
+  background-size: cover;
+}
