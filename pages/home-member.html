@@ -9,29 +9,10 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <!-- 
-      待解決
-      1. 字體尚未下載
-
-      待調整
-      1. 文字 RWD 變數設定
-      2. button 變數設定
-     -->
-    <main class="pt-18 pt-lg-0 overflow-hidden">
-      <!-- banner -->
-      <div class="mb-16 mb-lg-20">
-        <div style="background-image: url('../assets/images/banner.jpg');" class="banner-img mirror-image bg-image-center position-relative">
-          <div class="container mirror-image h-100 d-flex flex-column justify-content-center align-items-start">
-            <h2 class="banner-title">夢想是起點<br>但創作沒有終點</h2>
-            <p class="fs-5 my-4 my-lg-6">知音就在 coMusic，最美好的音樂社群平台</p>
-            <a href="login.html" class="btn-base btn-main">會員登入</a>
-          </div>
-        </div>
-      </div>
-
+    <main class="page-top overflow-hidden">
       <!-- hot news -->
       <!-- 待解決 1. 無縫輪播 -->
-      <div class="mb-16 mb-lg-20 overflow-hidden">
+      <div class="mt-10 mb-8 mb-lg-12 overflow-hidden">
         <div class="container position-relative">
           <div class="swiper newSwiper">
             <ul class="swiper-wrapper">
@@ -53,27 +34,43 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </div>
 
+      <!-- welcome -->
+      <div class="mb-12 mb-lg-16">
+        <div class="container">
+          <h2 class="fs-8">午安 Daniel！</h2>
+        </div>
+      </div>
+
+      <div class="mb-16 mb-lg-20">
+        <div class="container">
+          <h2 class="fs-6 mb-4">我的歌單</h2>
+          <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <li class="col">
+              <a href="#">
+                <div class="border border-gray-400 rounded-20 p-4 d-flex align-items-center">
+                  <img style="width: 30px; height: 30px" class="object-fit-cover rounded-10 me-4" src="../assets/images/hot-4.jpg" alt="">
+                  <p class="text-gray-600 me-auto">舒壓的時候聽的</p>
+                  <button class="btn p-0">
+                    <span class="material-icons">lock</span>
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
       <!-- 即時熱門 -->
-      <!-- 待解決 1. 下拉式選單及文字切換 -->
       <div class="mb-16 mb-lg-20">
         <div class="container">
           <div class="row">
             <div data-aos="fade-right" class="col-lg-7 mb-16 mb-lg-0">
               <div class="h-100 d-flex flex-column">
-                <div class="d-flex flex-column flex-lg-row justify-content-lg-between mb-4">
-                  <h2 class="fs-6 text-nowrap mb-4 mb-lg-0">即時熱門</h2>
-                  <select class="form-select w-lg-fit-content" aria-label="Default select example">
-                    <option value="all">所有類型</option>
-                    <option value="new">即時新歌</option>
-                    <option value="hot">即時熱門</option>
-                    <option value="funk">嘻哈/雷鬼</option>
-                  </select>
-                </div>
+                <h2 class="fs-6 mb-4">即時熱門</h2>
                 <table class="table align-middle text-center">
                   <thead>
                     <tr class="text-gray-400">
@@ -340,7 +337,7 @@
                   </tbody>
                 </table>
                 <div class="text-center mt-auto">
-                  <a href="#" class="btn-base btn-sec">點我聽更多</a>
+                  <button class="btn btn-outline-gray-900 py-2 px-10">點我聽更多</button>
                 </div>
               </div>
             </div>
@@ -353,7 +350,7 @@
                     <p class="mb-2">今天可不可以不回家</p>
                     <p class="mb-0">LUCKY-RIRI</p>
                   </div>
-                  <div class="ms-auto d-flex gap-2 mb-4">
+                  <div class="ms-auto d-flex gap-2">
                     <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
                       <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
                     </button>
@@ -362,7 +359,7 @@
                     </button>
                   </div>
                 </div>
-                <button class="h-100 btn-base btn-main">點我聽更多</button>
+                <button class="h-100 btn btn-primary py-2 px-10 mt-4">點我聽更多</button>
               </div>
               <div class="border border-gray-200 rounded-5 p-8 d-flex flex-column">
                 <div class="d-flex justify-content-between">
@@ -377,7 +374,7 @@
                     <p class="mb-2 text-justify">巴賴Balai（排灣傳統織布時尚服裝秀_走秀混音作品）</p>
                     <p class="mb-0">巴賴 (Balai)</p>
                   </div>
-                  <div class="ms-auto d-flex gap-2 mb-4">
+                  <div class="ms-auto d-flex gap-2">
                     <button class="border border-gray-200 rounded-circle d-flex justify-content-center align-items-center bg-white" style="width: 28px;height: 28px">
                       <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
                     </button>
@@ -386,7 +383,7 @@
                     </button>
                   </div>
                 </div>
-                <button class="h-100 btn-base btn-main">點我聽更多</button>
+                <button class="h-100 btn btn-primary py-2 px-10 mt-4">點我聽更多</button>
               </div>
             </div>
           </div>
@@ -453,7 +450,7 @@
               </li>
             </ul>
             <div class="d-lg-none text-center mt-4">
-              <a href="#" class="btn-base btn-sec">更多音樂</a>
+              <a href="#" class="btn btn-outline-gray-900 py-2 px-10">更多音樂</a>
             </div>
           </div>
 
@@ -501,7 +498,7 @@
               </li>
             </ul>
             <div class="d-lg-none text-center mt-4">
-              <a href="#" class="btn-base btn-sec">更多音樂人</a>
+              <a href="#" class="btn btn-outline-gray-900 py-2 px-10">更多音樂人</a>
             </div>
           </div>
         </div>
