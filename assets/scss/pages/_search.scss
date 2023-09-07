@@ -1,0 +1,24 @@
+//swiper
+
+
+
+.hit-img {
+    height: 300px;
+
+    @include media-breakpoint-up(lg) {
+        height: 330px;
+    }
+}
+
+.play-btn {
+    font-size: 72px;
+}
+
+//swiper-scrollbar
+.swiper-scrollbar {
+    background: $gray-600;
+}
+
+.swiper-scrollbar-drag {
+    background: $primary !important;
+}
