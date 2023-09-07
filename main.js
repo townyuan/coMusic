@@ -1,9 +1,19 @@
+// Import
+import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle'; // 覆蓋 bootstrap
+
 import './assets/scss/all.scss';
 import './node_modules/bootstrap/dist/js/bootstrap.min.js';
-import Swiper from 'swiper/bundle';
+
+import AOS from 'aos';
+import './node_modules/aos/dist/aos.css';
+
+import jQuery from 'jquery';
+window.$ = jQuery;
 
 
+
+// JavaScript
 // News swiper
 const newsSwiper = new Swiper(".newSwiper", {
   slidesPerView: 1,
@@ -62,3 +72,20 @@ const commentSwiper = new Swiper(".commentSwiper", {
     clickable: true,
   },
 });
+
+
+// aos
+AOS.init();
+
+
+// jQuery
+// Signin/ login
+$('.needs-validation').each(function(index) {
+  $(this).on('submit', function(e) {
+    e.preventDefault();
+    $(this).addClass('was-validated');
+  });
+});
+
+
+// 

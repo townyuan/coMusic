@@ -1,24 +1,21 @@
-.text-replace {
-  width: 0px;
-  height: 0px;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.mirror-image {
-  transform: scaleX(-1);
-}
-
-.bg-image-center {
-  background-position: center;
-  background-size: cover;
-}
-
 .page-top{
   padding-top: 74px;
 }
 
 .h-fit{
   height: calc(100vh - 74px);
+}
+
+.or-line::after{
+  content: "";
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background: $gray-400;
+  z-index: -10;
 }
