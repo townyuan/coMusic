@@ -31,11 +31,7 @@
 }
 
 .musican-img{
-  height: 164px;
-
-  @include media-breakpoint-up(lg){
-    height: 196px;
-  }
+  aspect-ratio: 1/1;
 }
 
 .mirror-image{
