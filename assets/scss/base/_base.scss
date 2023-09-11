@@ -244,12 +244,14 @@ sup { top: -.5em; }
 // Links
 
 a {
-  color: var(--#{$prefix}link-color);
+  // color: var(--#{$prefix}link-color);
+  color: $gray-900; // *custom
   // text-decoration: $link-decoration;
   text-decoration: none; // *custom
 
   &:hover {
     color: var(--#{$prefix}link-hover-color);
+    // color: $gray-900;
     text-decoration: $link-hover-decoration;
     cursor: pointer; // *custom
   }

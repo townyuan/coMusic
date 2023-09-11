@@ -38,6 +38,17 @@ $utilities: map-merge(
     // scss-docs-start utils-overflow
     "overflow": (
       property: overflow,
+      responsive: true,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-x": ( // *custom
+      property: overflow-x,
+      responsive: true,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": ( // *custom
+      property: overflow-y,
+      responsive: true,
       values: auto hidden visible scroll,
     ),
     // scss-docs-end utils-overflow
@@ -190,6 +201,7 @@ $utilities: map-merge(
       values: (100: 100vw)
     ),
     "height": (
+      responsive: true,
       property: height,
       class: h,
       values: (
@@ -197,7 +209,8 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
-        auto: auto
+        auto: auto,
+        fit-content: fit-content,
       )
     ),
     "max-height": (
@@ -207,6 +220,7 @@ $utilities: map-merge(
     ),
     "viewport-height": (
       property: height,
+      responsive: true,
       class: vh,
       values: (100: 100vh)
     ),
@@ -552,6 +566,7 @@ $utilities: map-merge(
     // scss-docs-end utils-text
     // scss-docs-start utils-color
     "color": (
+      responsive: true, // *custom
       property: color,
       class: text,
       local-vars: (
@@ -580,6 +595,7 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true, // *custom
       property: background-color,
       class: bg,
       local-vars: (
@@ -609,7 +625,10 @@ $utilities: map-merge(
     "gradient": (
       property: background-image,
       class: bg,
-      values: (gradient: var(--#{$prefix}gradient))
+      values: (
+        gradient: var(--#{$prefix}gradient),
+        linear: linear-gradient(0deg, $primary 0%, transparent 30%),
+      )
     ),
     // scss-docs-start utils-interaction
     "user-select": (
@@ -639,6 +658,7 @@ $utilities: map-merge(
         20: 20px,
         30: 30px,
         circle: 50%,
+        main: 0 120px 0 120px,
         pill: var(--#{$prefix}border-radius-pill)
       )
     ),

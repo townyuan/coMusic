@@ -1,0 +1,27 @@
+.rounded-bottom-30 {
+  border-radius: 0 0 40px 40px;
+}
+
+.musican-screen{
+  height: auto ;
+
+  @include media-breakpoint-up(lg){
+    height: 100vh;
+  }
+}
+
+.musican-personal {
+  height: 356px;
+  
+  @include media-breakpoint-up(lg){
+    height: calc(100vh / 5 * 3);
+  }
+}
+
+.musican-info {
+  height: fit-content;
+
+  @include media-breakpoint-up(lg){
+    height: calc(100vh / 5 * 2);
+  }
+}

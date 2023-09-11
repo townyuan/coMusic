@@ -31,9 +31,30 @@
 }
 
 .musican-img{
-  height: 164px;
+  aspect-ratio: 1/1;
+}
+
+.mirror-image{
+  transform:scaleX(-1);
+}
+
+.bg-image-center{
+  background-position: center;
+  background-size: cover;
+}
+
+.song-img{
+  height: 396px;
 
   @include media-breakpoint-up(lg){
-    height: 196px;
+    height: 480px;
+  }
+}
+
+.musican-banner{
+  height: 296px;
+
+  @include media-breakpoint-up(lg){
+    height: calc(100vh / 5 * 3);
   }
 }
