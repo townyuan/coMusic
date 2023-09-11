@@ -100,3 +100,4 @@ const hitSwiper = new Swiper(".hitSwiper", {
   },
   slidesPerView: "auto",
 });
+
