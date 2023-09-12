@@ -9,8 +9,10 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./utils/variables";
 
-@import "../../node_modules/bootstrap/scss/maps"; /* with util */
-@import "./utils/util"; /* with maps */
+@import "../../node_modules/bootstrap/scss/maps";
+/* with util */
+@import "./utils/util";
+/* with maps */
 
 
 @import "../../node_modules/bootstrap";
