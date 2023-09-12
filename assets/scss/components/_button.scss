@@ -1,0 +1,50 @@
+
+.btn{
+  .btn-check:checked + &,
+  :not(.btn-check) + &:active,
+  &:first-child:active,
+  &.active,
+  &.show {
+    border-color: transparent;
+  }
+}
+
+.btn-base {
+  border: none;
+  padding: .5rem 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main {
+  color: $gray-900;
+  background-color: $primary;
+
+  &:hover {
+    color: white;
+    background-color: $gray-600;
+  }
+
+  &:active {
+    color: white;
+    background-color: $gray-900;
+  }
+}
+
+.btn-sec {
+  color: $gray-900;
+  background-color: transparent;
+  border: 1px solid $gray-900;
+
+  &:hover {
+    color: white;
+    background-color: $gray-900;
+  }
+
+  &:active {
+    color: $gray-900;
+    background-color: $primary;
+    border: 1px solid $primary;
+  }
+}

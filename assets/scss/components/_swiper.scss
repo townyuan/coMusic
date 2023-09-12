@@ -19,6 +19,20 @@
   }
 }
 
+.swiper-pagination{
+  position: relative;
+  margin-top: 16px;
+}
+
+.swiper-pagination-bullet{
+  box-shadow: 0 1px 3px $gray-600;
+
+  &-active{
+    background-color: $primary;
+  }
+}
+
+
 //.swiper-slide {
 //   text-align: center;
 //   font-size: 18px;

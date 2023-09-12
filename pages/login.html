@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./layout/meta'); -%>
+  <title>登入 | coMusic</title>
+</head>
+
+<body>
+  <%- include('./layout/header-logo'); -%>
+
+    <main class="page-top">
+      <div class="row g-0 justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="py-12">
+            <div class="row justify-content-center g-0">
+              <div class="col-10 col-lg-6">
+                <h2 class="mb-6 mb-lg-8 fs-6 text-center">會員登入</h2>
+                <div class="d-flex flex-column">
+                  <a href="#" class="btn-base btn-sec mb-3">
+                    <i class="bi bi-google me-3"></i>  
+                    使用 Google 帳戶繼續
+                  </a>
+                  <a href="#" class="btn-base btn-sec mb-3">
+                    <i class="bi bi-facebook me-3"></i>
+                    使用 Facebook 帳戶繼續
+                  </a>
+                  <a href="#" class="btn-base btn-sec">
+                    <i class="bi bi-apple me-3"></i>
+                    使用 Apple 帳戶繼續
+                  </a>
+                </div>
+
+                <div class="my-4 text-center text-gray-400 or-line position-relative">
+                  <span class="d-inline-block px-2 bg-white">or</span>
+                </div>
+
+                <form action="login.html" class="d-flex flex-column mb-6 needs-validation" novalidate>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control was-validated" id="loginEmail" placeholder="name@example.com" required>
+                    <label for="loginEmail">電子信箱</label>
+                    <div class="invalid-feedback">電子信箱為必填項目</div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control was-validated" id="loginPassword" placeholder="Password" required>
+                    <label for="loginPassword">密碼</label>
+                    <div class="invalid-feedback">密碼為必填項目</div>
+                  </div>
+                  <a href="#" class="d-block mb-5 text-end text-gray-600 text-decoration-underline">忘記密碼?</a>
+                  <input type="submit" class="btn-base btn-main" value="登入">
+                </form>
+                <div class="text-center">
+                  還沒註冊嗎？ 點我 <a href="signup.html" class="text-secondary text-decoration-underline">開始註冊</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-none d-lg-block position-relative">
+          <img class="w-100 h-fit object-fit-cover" src="../assets/images/music-type-8.jpg" alt="coMusic login">
+          <div class="position-absolute bottom-15 start-0 text-white p-12">
+            <p class="mb-2 fs-8 fw-700">知音就在 <span class="font-lemon">coMusic</span> <br>最美好的音樂社群平台</p>
+            <p class="bg-black px-2 fs-5 text-primary">You can create or share your music libary.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

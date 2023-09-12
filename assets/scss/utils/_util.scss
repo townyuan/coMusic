@@ -38,6 +38,17 @@ $utilities: map-merge(
     // scss-docs-start utils-overflow
     "overflow": (
       property: overflow,
+      responsive: true,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-x": ( // *custom
+      property: overflow-x,
+      responsive: true,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": ( // *custom
+      property: overflow-y,
+      responsive: true,
       values: auto hidden visible scroll,
     ),
     // scss-docs-end utils-overflow
@@ -162,6 +173,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
@@ -169,7 +181,8 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
-        auto: auto
+        auto: auto,
+        fit-content: fit-content, // *custom
       )
     ),
     "max-width": (
@@ -188,6 +201,7 @@ $utilities: map-merge(
       values: (100: 100vw)
     ),
     "height": (
+      responsive: true,
       property: height,
       class: h,
       values: (
@@ -195,7 +209,8 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
-        auto: auto
+        auto: auto,
+        fit-content: fit-content,
       )
     ),
     "max-height": (
@@ -205,6 +220,7 @@ $utilities: map-merge(
     ),
     "viewport-height": (
       property: height,
+      responsive: true,
       class: vh,
       values: (100: 100vh)
     ),
@@ -450,6 +466,18 @@ $utilities: map-merge(
       class: gap,
       values: $spacers
     ),
+    "row-gap": ( // *custom
+      responsive: true,
+      property: row-gap,
+      class: row-gap,
+      values: $spacers
+    ),
+    "column-gap": ( // *custom
+      responsive: true,
+      property: column-gap,
+      class: column-gap,
+      values: $spacers
+    ),
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
@@ -460,7 +488,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
-      responsive: true,
+      responsive: true, // *custom
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -480,7 +508,7 @@ $utilities: map-merge(
         bold: $font-weight-bold,
         semibold: $font-weight-semibold,
         bolder: $font-weight-bolder,
-        100: 100,
+        100: 100, // *custom
         200: 200,
         300: 300,
         400: 400,
@@ -488,7 +516,7 @@ $utilities: map-merge(
         600: 600,
         700: 700,
         800: 800,
-        900: 900, // *custom
+        900: 900,
       )
     ),
     "line-height": (
@@ -538,6 +566,7 @@ $utilities: map-merge(
     // scss-docs-end utils-text
     // scss-docs-start utils-color
     "color": (
+      responsive: true, // *custom
       property: color,
       class: text,
       local-vars: (
@@ -566,10 +595,11 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true, // *custom
       property: background-color,
       class: bg,
       local-vars: (
-        "bg-opacity": 1
+        "bg-opacity": 1,
       ),
       values: map-merge(
         $utilities-bg-colors,
@@ -586,6 +616,7 @@ $utilities: map-merge(
         10: .1,
         25: .25,
         50: .5,
+        65: .65,
         75: .75,
         100: 1
       )
@@ -594,7 +625,10 @@ $utilities: map-merge(
     "gradient": (
       property: background-image,
       class: bg,
-      values: (gradient: var(--#{$prefix}gradient))
+      values: (
+        gradient: var(--#{$prefix}gradient),
+        linear: linear-gradient(0deg, $primary 0%, transparent 30%),
+      )
     ),
     // scss-docs-start utils-interaction
     "user-select": (
@@ -620,9 +654,11 @@ $utilities: map-merge(
         3: var(--#{$prefix}border-radius-lg),
         4: var(--#{$prefix}border-radius-xl),
         5: var(--#{$prefix}border-radius-2xl),
-        20: 20px, // *custom
+        10: 10px, // *custom
+        20: 20px,
         30: 30px,
         circle: 50%,
+        main: 0 120px 0 120px,
         pill: var(--#{$prefix}border-radius-pill)
       )
     ),
@@ -672,6 +708,14 @@ $utilities: map-merge(
         10: 50% 10%,
       )
     ),
+    "backdrop-filter": ( // *custom
+      property: backdrop-filter,
+      class: filter,
+      values: (
+        blur-5: blur(5px),
+        blur-10: blur(10px),
+      )
+    )
     // scss-docs-end utils-visibility
   ),
   $utilities
