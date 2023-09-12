@@ -1,7 +1,7 @@
+.btn {
 
-.btn{
-  .btn-check:checked + &,
-  :not(.btn-check) + &:active,
+  .btn-check:checked+&,
+  :not(.btn-check)+&:active,
   &:first-child:active,
   &.active,
   &.show {

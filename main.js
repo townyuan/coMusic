@@ -44,7 +44,7 @@ const commentSwiper = new Swiper(".commentSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
-  
+
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -80,8 +80,8 @@ AOS.init();
 
 // jQuery
 // Signin/ login
-$('.needs-validation').each(function(index) {
-  $(this).on('submit', function(e) {
+$('.needs-validation').each(function (index) {
+  $(this).on('submit', function (e) {
     e.preventDefault();
     $(this).addClass('was-validated');
   });
@@ -100,4 +100,3 @@ const hitSwiper = new Swiper(".hitSwiper", {
   },
   slidesPerView: "auto",
 });
-

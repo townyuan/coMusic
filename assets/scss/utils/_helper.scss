@@ -1,12 +1,12 @@
-.page-top{
+.page-top {
   padding-top: 74px;
 }
 
-.h-fit{
+.h-fit {
   height: calc(100vh - 74px);
 }
 
-.or-line::after{
+.or-line::after {
   content: "";
   height: 1px;
   display: block;
@@ -20,14 +20,15 @@
   z-index: -10;
 }
 
-.music-top-64{
+.music-top-64 {
   margin-top: 16px;
-  @include media-breakpoint-up(xl){
+
+  @include media-breakpoint-up(xl) {
     margin-top: 256px;
   }
 }
 
-.multiline-ellipsis { 
+.multiline-ellipsis {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
