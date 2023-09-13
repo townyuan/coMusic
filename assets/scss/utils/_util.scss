@@ -715,7 +715,16 @@ $utilities: map-merge(
         blur-5: blur(5px),
         blur-10: blur(10px),
       )
-    )
+    ),
+    "writing-mode": ( // *custom
+      property: writing-mode,
+      class: wm,
+      values: (
+        h-t: horizontal-tb,
+        v-lr: vertical-lr,
+        v-rl: vertical-rl,
+      )
+    ),
     // scss-docs-end utils-visibility
   ),
   $utilities
