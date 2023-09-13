@@ -35,9 +35,15 @@
   }
 }
 
+/* 排行榜 */
 .hot-img{
   width: 76px;
   height: 76px;
+  object-fit: cover;
+}
+.hot-img-s{
+  width: 48px;
+  height: 48px;
   object-fit: cover;
 }
 
