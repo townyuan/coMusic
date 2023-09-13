@@ -1,0 +1,9 @@
+.more-img {
+
+    height: 200px;
+
+    @include media-breakpoint-up(lg) {
+        height: 250px;
+    }
+
+}
