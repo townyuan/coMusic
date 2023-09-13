@@ -396,6 +396,9 @@ $spacers: (
   18h: $spacer * 4.625, // 74px
   19: $spacer * 4.75,   // 76px
   20: $spacer * 5,      // 80px
+  24: $spacer * 6,      // 96px
+  40: $spacer * 10,     // 160px
+  50: $spacer * 12.5,     // 200px
 ); // *custom
 // scss-docs-end spacer-variables-maps
 
@@ -645,6 +648,8 @@ $font-sizes: (
   16: $spacer * 4,     // 64px
   18: $spacer * 4.5,   // 72px
   20: $spacer * 5,     // 80px
+  30: $spacer * 7.5,     // 120px
+  34: $spacer * 8.5,     // 136px
   64: $spacer * 16,     // 256px
 ); // *custom
 // scss-docs-end font-sizes
