@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAnCAYAAACIVoEIAAAACXBIWXMAAAsSAAALEgHS3X78AAADw0lEQVRYhe1YO0hcQRQ9u65GDWIai9hosyzYuKCp3dYlgoE0bpEEAoYUISErJJW/LqDBTmIVAjFNIIKwViFrrYJCEHQbbZLCJmJcjVl94czOPN+bmf3p+ilyYGHfvJk7Z869c+/MCziOg0qQceL9AGLy11lg6BqANH/hQGrOeFsCZZHKOPF2AC8APALQbHQojl0A7wFMhQOpraI9JUqSyjjxUUmoUjI6diWxUeNNuaSkOnNFXHRW0LX9xVSzkso48aiMifOqUwhULRYOpFZt74NXQAjSdlrOZcCnlHTZ6gUT8oKKRXVX6krNXSIhyLmMlOGSkrus2kFdDjrl3C6E+67AbTp8blRKVSMPnQfNkoOAUupXIVLbGydYX8lhcT6HnR8nbntjUwDxRC16E3XGGC84Zjmdw1I6J2wpdMdCeDpW7+26Gw6kbglSmye9rGVfbMY+vzsSBouhLRLE0GSDIKnjw8QfLM7/NdrVuOGZRr35HmtlUBZWH9ZXjjE+eFCSkFJSnzi752B8MGu0+xft4PVAFo97fmNh9kg1Cy4GKU4y+fJAGNZhU4PY3/M/TyQPfK5SoDp02f0ndcK+Cgd6ZHrk0EfKlwamRw8NY8SDoRt486kRLa1GEUBHd437n6u2EWLs0V2MpdSsqeByPuY6oSdPyu0NZgWurKevViiVnKxHR1eeBJ9JVj1z9bYJSYQ2ID1h8wJE2OTDJaST0kFlvDuMz8m3DUY/yFi0TagIlQtXKRqzyd7TFzLaCmHLMp4qeV3e0mqPSy/c3lubpkGio6t8Utsbx0Zbe8Qfg3Q5Q6EY3BG2WMobMZoKYuen6TrbjqU72yLmhlGKBuVJEDctgyuFbQG2GCPRh8l6oy0SrfmuSKUFy9smc2JbcysnYcLj79ndfRHc7kotNmxxBsumuhMLoelW4KuPFOW0Sb30zZ/VlzxZngQXPrrZ2IgfnOYfXxsXopPqTYg4E1x8BZmJj9lVBwNT7Rr9Pd8xVymSrwayhstU8YbM/p6yIsAY603UnRZkSWoKwHM2sGbZUoMNnGx4psG35amMLBllQRJi1zF1/VLWpuRBS1R85pZSUKcDvexYjiRWcEHsJwmpCyvgvTjII+mIekG/ry8fG1JzUta6UrmGLmTc6OcoliSO185hY95Lqn6bWb2Cc/paOJDyXbX07dKv3HhJ2JVzoiApeXCPXRIxdUs2ru9GYpFX6YsmVtm13UMsqkpQlbEmr1NWQij0gcOLa/UpSCPWLj+YnYVc9T+aWQhej8+Llw1roP8npQPAP5rGz/621pPuAAAAAElFTkSuQmCC" type="image/x-icon" />    <title>coMusic | 音樂人</title>
+  <script type="module" crossorigin src="/coMusic/assets/main-36f92ddb.js"></script>
+  <link rel="stylesheet" href="/coMusic/assets/main-d511cb81.css">
+</head>
+
+<body>
+  <header class="position-fixed top-0 start-0 end-0 mx-auto bg-white bg-opacity-65 filter-blur-5" style="z-index: 100;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <!-- logo -->
+      <a class="navbar-brand" href="index.html" title="coMusic首頁">
+        <svg style="height: 48px" id="comusic-logo-dark" data-name="comusic-logo-dark"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.68 38.18">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #dafe49;
+              }
+
+              .cls-2 {
+                font-size: 26px;
+                fill: #3d3d3d;
+                font-family: Lemon-Regular, Lemon;
+              }
+            </style>
+          </defs>
+          <circle class="cls-1" cx="18" cy="18" r="18" /><text class="cls-2"
+            transform="translate(1.31 27.15)">coMusic</text>
+        </svg>
+        <h1 class="d-block text-replace">coMusic</h1>
+      </a>
+
+      <!-- 待補：連結 -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">探索</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">排行榜</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">歌單</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="musician.html">音樂人</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ms-auto d-flex">
+        <button class="btn d-flex justify-content-center align-items-center" type="submit"><span
+            class="material-icons">search</span></button>
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="login.html" class="d-none d-lg-block btn-base btn-sec">登入</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn ms-auto d-flex align-items-center justify-content-center"
+      data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="material-icons" style="font-size: 20px;">close</span>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="text-center mb-16">
+      <svg width="174" height="49" viewBox="0 0 174 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24.5" cy="24.5" r="24.5" fill="#DAFE49" />
+        <path
+          d="M1.62 29.432C1.62 25.592 2.94 22.46 5.58 20.036C8.22 17.612 11.544 16.4 15.552 16.4C17.616 16.4 19.248 16.796 20.448 17.588C21.648 18.356 22.248 19.328 22.248 20.504C22.248 21.68 21.84 22.58 21.024 23.204C20.232 23.828 19.356 24.14 18.396 24.14C17.46 24.14 16.596 23.888 15.804 23.384C15.036 22.88 14.436 22.148 14.004 21.188C12.492 21.812 11.292 22.916 10.404 24.5C9.54 26.084 9.108 27.668 9.108 29.252C9.108 30.836 9.42 32.12 10.044 33.104C10.668 34.088 11.484 34.58 12.492 34.58C13.5 34.58 14.316 34.244 14.94 33.572C15.588 32.9 15.912 31.904 15.912 30.584C19.416 30.584 21.168 31.412 21.168 33.068C21.168 34.484 20.28 35.816 18.504 37.064C16.728 38.288 14.388 38.9 11.484 38.9C8.58 38.9 6.204 38.036 4.356 36.308C2.532 34.556 1.62 32.264 1.62 29.432ZM42.325 19.136C43.669 19.136 44.821 19.676 45.781 20.756C46.765 21.836 47.257 23.408 47.257 25.472C47.257 27.512 46.897 29.408 46.177 31.16C45.457 32.888 44.509 34.304 43.333 35.408C42.157 36.512 40.825 37.376 39.337 38C37.849 38.6 36.325 38.9 34.765 38.9C31.621 38.9 29.137 38.036 27.313 36.308C25.489 34.58 24.577 32.288 24.577 29.432C24.577 25.568 25.813 22.436 28.285 20.036C30.781 17.612 33.949 16.4 37.789 16.4C38.653 16.4 39.517 16.496 40.381 16.688C40.645 17.48 40.789 18.38 40.813 19.388C41.317 19.22 41.821 19.136 42.325 19.136ZM37.897 24.14C37.897 23.468 38.053 22.712 38.365 21.872C38.701 21.032 39.229 20.36 39.949 19.856C36.781 20.528 34.597 21.812 33.397 23.708C32.365 25.34 31.849 27.02 31.849 28.748C31.849 30.476 32.197 31.868 32.893 32.924C33.613 33.956 34.525 34.472 35.629 34.472C38.077 34.472 39.805 32.876 40.813 29.684C38.869 28.484 37.897 26.636 37.897 24.14ZM78.6074 38.936C77.0474 38.936 75.9314 38.492 75.2594 37.604C74.5874 36.692 74.2514 35.36 74.2514 33.608C74.2514 31.856 74.8154 27.824 75.9434 21.512H75.3674C73.9034 23.432 72.6914 25.724 71.7314 28.388C70.7714 31.052 70.1834 33.452 69.9674 35.588C68.7914 36.692 67.4354 37.244 65.8994 37.244C65.2754 37.244 64.7234 37.028 64.2434 36.596C63.7874 36.14 63.3314 35.36 62.8754 34.256C61.9874 32.024 61.3514 27.776 60.9674 21.512H60.3914C59.2154 26.672 58.6274 30.308 58.6274 32.42C58.6274 34.532 58.9874 36.164 59.7074 37.316C58.2674 38.396 56.7674 38.936 55.2074 38.936C53.6474 38.936 52.5314 38.492 51.8594 37.604C51.1874 36.692 50.8514 35.348 50.8514 33.572C50.8514 31.772 51.6074 26.696 53.1194 18.344L51.2114 14.492C53.9234 12.74 56.3954 11.864 58.6274 11.864C59.6114 11.864 60.4394 11.972 61.1114 12.188C61.8074 12.38 62.4674 12.764 63.0914 13.34C63.7394 13.916 64.2674 14.72 64.6754 15.752C65.6114 18.08 66.2834 21.476 66.6914 25.94H67.1234C68.3714 22.268 70.0994 19.112 72.3074 16.472C73.5074 15.056 74.9354 13.94 76.5914 13.124C78.2714 12.308 80.0834 11.9 82.0274 11.9C83.8754 11.9 84.7994 13.016 84.7994 15.248C84.7994 15.992 84.3314 18.764 83.3954 23.564C82.4834 28.34 82.0274 31.184 82.0274 32.096C82.0274 34.424 82.3874 36.164 83.1074 37.316C81.6674 38.396 80.1674 38.936 78.6074 38.936ZM94.0202 38.9C91.9082 38.9 90.4322 38.384 89.5922 37.352C88.7522 36.32 88.3322 35.024 88.3322 33.464C88.3322 31.88 88.5962 29.72 89.1242 26.984C89.6522 24.248 89.9162 22.268 89.9162 21.044C89.9162 19.82 89.6642 18.86 89.1602 18.164C91.3922 16.988 93.2762 16.4 94.8122 16.4C95.7962 16.4 96.5042 16.604 96.9362 17.012C97.3922 17.396 97.6202 18.032 97.6202 18.92C97.6202 19.808 97.2482 21.992 96.5042 25.472C95.7842 28.928 95.4242 31.064 95.4242 31.88C95.4242 32.696 95.6522 33.344 96.1082 33.824C96.5642 34.28 97.1642 34.508 97.9082 34.508C98.6522 34.508 99.4442 34.22 100.284 33.644C101.124 33.044 101.808 32.204 102.336 31.124C102.672 29.18 103.332 26.108 104.316 21.908L102.156 19.028C104.58 17.276 106.884 16.4 109.068 16.4C110.148 16.4 110.916 16.604 111.372 17.012C111.852 17.396 112.092 17.996 112.092 18.812C112.092 19.604 111.648 21.896 110.76 25.688C109.896 29.48 109.464 32.18 109.464 33.788C109.464 35.372 109.836 36.488 110.58 37.136C109.236 38.312 107.82 38.9 106.332 38.9C104.868 38.9 103.812 38.576 103.164 37.928C102.516 37.28 102.192 36.428 102.192 35.372L101.832 35.192C101.04 36.344 99.9362 37.256 98.5202 37.928C97.1282 38.576 95.6282 38.9 94.0202 38.9ZM127.092 10.712C127.092 11.624 126.612 12.416 125.652 13.088C124.692 13.736 123.6 14.06 122.376 14.06C121.152 14.06 120.18 13.82 119.46 13.34C118.764 12.86 118.416 12.212 118.416 11.396C118.416 10.292 118.932 9.428 119.964 8.804C120.996 8.18 122.088 7.868 123.24 7.868C124.392 7.868 125.316 8.108 126.012 8.588C126.732 9.068 127.092 9.776 127.092 10.712ZM120.072 38.9C118.584 38.9 117.504 38.528 116.832 37.784C116.16 37.04 115.824 35.912 115.824 34.4C115.824 32.864 116.592 28.772 118.128 22.124L116.112 19.1C119.112 17.3 121.476 16.4 123.204 16.4C124.188 16.4 124.884 16.616 125.292 17.048C125.7 17.456 125.904 18.128 125.904 19.064C125.904 19.424 125.46 21.536 124.572 25.4C123.684 29.264 123.24 32.024 123.24 33.68C123.24 35.336 123.612 36.488 124.356 37.136C123.012 38.312 121.584 38.9 120.072 38.9ZM140.905 21.188C140.017 21.452 139.309 21.836 138.781 22.34C138.253 22.82 137.785 23.516 137.377 24.428C141.433 25.028 144.289 25.892 145.945 27.02C147.601 28.148 148.429 29.756 148.429 31.844C148.429 33.164 148.057 34.316 147.313 35.3C146.569 36.26 145.633 36.992 144.505 37.496C142.297 38.432 140.125 38.9 137.989 38.9C131.917 38.9 128.881 37.592 128.881 34.976C128.881 33.656 129.469 32.336 130.645 31.016C131.245 31.856 132.145 32.576 133.345 33.176C134.569 33.776 135.757 34.076 136.909 34.076C138.901 34.076 140.101 33.2 140.509 31.448C136.861 31.016 134.221 30.2 132.589 29C130.957 27.8 130.141 26.108 130.141 23.924C130.141 22.196 130.705 20.744 131.833 19.568C132.985 18.392 134.401 17.576 136.081 17.12C137.785 16.64 139.693 16.4 141.805 16.4C143.941 16.4 145.693 16.808 147.061 17.624C148.453 18.416 149.149 19.388 149.149 20.54C149.149 21.692 148.741 22.58 147.925 23.204C147.133 23.828 146.257 24.14 145.297 24.14C144.361 24.14 143.497 23.888 142.705 23.384C141.937 22.88 141.337 22.148 140.905 21.188ZM152.194 29.432C152.194 25.592 153.514 22.46 156.154 20.036C158.794 17.612 162.118 16.4 166.126 16.4C168.19 16.4 169.822 16.796 171.022 17.588C172.222 18.356 172.822 19.328 172.822 20.504C172.822 21.68 172.414 22.58 171.598 23.204C170.806 23.828 169.93 24.14 168.97 24.14C168.034 24.14 167.17 23.888 166.378 23.384C165.61 22.88 165.01 22.148 164.578 21.188C163.066 21.812 161.866 22.916 160.978 24.5C160.114 26.084 159.682 27.668 159.682 29.252C159.682 30.836 159.994 32.12 160.618 33.104C161.242 34.088 162.058 34.58 163.066 34.58C164.074 34.58 164.89 34.244 165.514 33.572C166.162 32.9 166.486 31.904 166.486 30.584C169.99 30.584 171.742 31.412 171.742 33.068C171.742 34.484 170.854 35.816 169.078 37.064C167.302 38.288 164.962 38.9 162.058 38.9C159.154 38.9 156.778 38.036 154.93 36.308C153.106 34.556 152.194 32.264 152.194 29.432Z"
+          fill="#3D3D3D" />
+      </svg>
+    </div>
+    <!-- 待補：連結 -->
+    <ul class="d-flex flex-column mb-4">
+      <li class="border-bottom"><a href="search.html" class="d-block py-4 text-center text-black">探索</a></li>
+      <li class="border-bottom"><a href="#" class="d-block py-4 text-center text-black">排行榜</a></li>
+      <li class="border-bottom"><a href="#" class="d-block py-4 text-center text-black">歌單</a></li>
+      <li class="border-bottom"><a href="musician.html" class="d-block py-4 text-center text-black">音樂人</a></li>
+    </ul>
+
+    <div class="text-center">
+      <a href="login.html" class="btn-base btn-sec">登入</a>
+    </div>
+  </div>
+</div>
+    <main>
+      <div class="musican-screen">
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <div class="musican-personal py-6 px-10 rounded-bottom-30 position-relative" style="background: url(/coMusic/assets/surprise-ef2ec2d7.jpg); background-size: cover; background-position: center;">
+              <div class="bg-gray-900 d-none d-lg-block position-absolute top-0 bottom-0 start-0 end-0" style="z-index: -10"></div>
+              <div class="h-100 d-none d-lg-flex flex-column justify-content-end">
+                <button type="button" class="btn-base btn-main fw-700 mb-4 ms-auto w-fit-content">
+                  <div class="track"><i class="bi bi-plus-circle me-2"></i>追蹤</div>
+                  <div class="untrack d-none"><i class="bi bi-plus-circle me-2"></i>已追蹤</div>
+                </button>
+                <div class="row bg-black bg-opacity-50 filter-blur-5 rounded-4 py-3">
+                  <div class="col-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="text-white fs-3h">音樂</div>
+                      <p class="fs-6 text-primary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="text-white fs-3h">收藏</div>
+                      <p class="fs-6 text-primary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="text-white fs-3h">粉絲</div>
+                      <p class="fs-6 text-primary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="text-white fs-3h">追蹤</div>
+                      <p class="fs-6 text-primary fw-700">1234</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="musican-info py-6 px-10 bg-white bg-lg-gray-900 text-gray-900 text-lg-white">
+              <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <h1 class="mb-2 position-relative">沈默紳士<a href="#" title="已認證音樂人" class="bi bi-patch-check-fill ms-2 position-absolute bottom-0 text-secondary text-lg-primary fs-6"></a></h1>
+                <p class="text-gray-400"><i class="bi bi-geo-alt-fill me-2"></i>Taiwan, Taipei </p>
+              </div>
+              <div class="d-lg-none">
+                <div class="row text-black my-4">
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="fs-3h">音樂</div>
+                      <p class="fs-6 text-secondary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="fs-3h">收藏</div>
+                      <p class="fs-6 text-secondary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="fs-3h">粉絲</div>
+                      <p class="fs-6 text-secondary fw-700">1234</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                      <div class="fs-3h">追蹤</div>
+                      <p class="fs-6 text-secondary fw-700">1234</p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="w-100 btn-base btn-main fw-700"><i class="bi bi-plus-circle me-2"></i>追蹤</button>
+              </div>
+              <div class="d-none d-lg-block">
+                <div class="position-relative d-flex flex-column my-6">
+                  <p class="text-justify multiline-ellipsis mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                  <a href="#" class="text-primary ms-auto">查看更多</a>
+                </div>
+                <div class="d-flex flex-wrap justify-content-end gap-3">
+                  <a href="#" title="前往 Spotify" class="btn btn-outline-light border border-2"><i class="bi bi-spotify"></i></a>
+                  <a href="#" title="前往 Youtube" class="btn btn-outline-light border border-2"><i class="bi bi-youtube"></i></a>
+                  <a href="#" title="前往 Twitter" class="btn btn-outline-light border border-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#" title="前往 Facebook" class="btn btn-outline-light border border-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" title="前往 Apple Music" class="btn btn-outline-light border border-2"><i class="bi bi-music-note-beamed"></i></a>
+                  <a href="#" title="前往 Instagram" class="btn btn-outline-light border border-2"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-8">
+            <div class="pt-lg-18h">
+              <div class="overflow-y-lg-scroll overflow-x-lg-hidden" style="height: calc(100vh - 74px)">
+                <div class="container">
+                  <div class="d-flex justify-content-center my-6">
+                    <ul class="nav" id="myTab">
+                      <li class="nav-item">
+                        <a href="#post" class="nav-link active" data-bs-toggle="tab">貼文</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#create" class="nav-link" data-bs-toggle="tab">音樂</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#favorite" class="nav-link" data-bs-toggle="tab">收藏</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#about" class="nav-link" data-bs-toggle="tab">關於</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <div class="tab-content pb-6">
+                    <div class="tab-pane fade show active" id="post">
+                      <div class="container pt-6 pb-20 px-lg-20">
+  <div class="row gy-6">
+    <div class="col-lg-5">
+      <div class="d-flex flex-column h-100 text-center text-lg-start">
+        <h2 class="fs-6 mb-6 text-center text-lg-start text-gray-800">焦點作品</h2>
+        <div class="shadow rounded-5 overflow-hidden position-relative text-white">
+          <img src="/coMusic/assets/hot-4-7e924eab.jpg" class="w-100 song-img object-fit-cover" alt="">
+          <div class="p-3 position-absolute bottom-0 start-0 end-0">
+            <div class="bg-black bg-opacity-50 filter-blur-5 p-6 rounded-5">
+              <p>這是創作的標題</p>
+              <p>這是創作的作者</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="d-flex flex-column h-100 text-center text-lg-start">
+        <h2 class="fs-6 mb-6 text-center text-lg-start text-gray-800">熱門作品</h2>
+        <ul class="h-100 d-flex flex-column justify-content-between">
+          <li class="shadow rounded-4 d-flex align-items-center py-2">
+            <p class="fs-6 mx-6">1</p>
+            <a href="#"><img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="/coMusic/assets/hot-3-d95b2209.jpg" alt=""></a>
+            <div class="ms-6">
+              <p><a href="#">這是哥的標題</a></p>
+              <p><a href="#">這是哥的作者</a></p>
+            </div>
+          </li>
+          <li class="shadow rounded-4 d-flex align-items-center py-2">
+            <p class="fs-6 mx-6">1</p>
+            <a href="#"><img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="/coMusic/assets/hot-3-d95b2209.jpg" alt=""></a>
+            <div class="ms-6">
+              <p><a href="#">這是哥的標題</a></p>
+              <p><a href="#">這是哥的作者</a></p>
+            </div>
+          </li>
+          <li class="shadow rounded-4 d-flex align-items-center py-2">
+            <p class="fs-6 mx-6">1</p>
+            <a href="#"><img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="/coMusic/assets/hot-3-d95b2209.jpg" alt=""></a>
+            <div class="ms-6">
+              <p><a href="#">這是哥的標題</a></p>
+              <p><a href="#">這是哥的作者</a></p>
+            </div>
+          </li>
+          <li class="shadow rounded-4 d-flex align-items-center py-2">
+            <p class="fs-6 mx-6">1</p>
+            <a href="#"><img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="/coMusic/assets/hot-3-d95b2209.jpg" alt=""></a>
+            <div class="ms-6">
+              <p><a href="#">這是哥的標題</a></p>
+              <p><a href="#">這是哥的作者</a></p>
+            </div>
+          </li>
+          <li class="shadow rounded-4 d-flex align-items-center py-2">
+            <p class="fs-6 mx-6">1</p>
+            <a href="#"><img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="/coMusic/assets/hot-3-d95b2209.jpg" alt=""></a>
+            <div class="ms-6">
+              <p><a href="#">這是哥的標題</a></p>
+              <p><a href="#">這是哥的作者</a></p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="col-lg-5">
+      <h2 class="mb-4 pb-2 fs-6 text-center text-lg-start">焦點作品</h2>
+      <div class="card h-100">
+        <img src="../assets/images/hot-6.jpg" class="object-fit-cover" style="height: 100%" alt="">      
+      </div>
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <img class="song-img" src="../assets/images/hot-6.jpg" alt="">
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="col-lg-7">
+      <h2 class="mb-4 pb-2 fs-6 text-center text-lg-start">最受歡迎作品</h2>
+
+      <ul class="">
+        <li class="d-flex align-items-center py-2 border-bottom border-gray-200">
+          <p class="fs-6 mx-6">1</p>
+          <img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="../assets/images/hot-8.jpg" alt="">
+          <div class="ms-6">
+            <p>這是哥的標題</p>
+            <p>這是哥的作者</p>
+          </div>
+        </li>
+        <li class="d-flex align-items-center py-2 border-bottom border-gray-200">
+          <p class="fs-6 mx-6">1</p>
+          <img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="../assets/images/hot-8.jpg" alt="">
+          <div class="ms-6">
+            <p>這是哥的標題</p>
+            <p>這是哥的作者</p>
+          </div>
+        </li>
+        <li class="d-flex align-items-center py-2 border-bottom border-gray-200">
+          <p class="fs-6 mx-6">1</p>
+          <img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="../assets/images/hot-8.jpg" alt="">
+          <div class="ms-6">
+            <p>這是哥的標題</p>
+            <p>這是哥的作者</p>
+          </div>
+        </li>
+        <li class="d-flex align-items-center py-2 border-bottom border-gray-200">
+          <p class="fs-6 mx-6">1</p>
+          <img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="../assets/images/hot-8.jpg" alt="">
+          <div class="ms-6">
+            <p>這是哥的標題</p>
+            <p>這是哥的作者</p>
+          </div>
+        </li>
+        <li class="d-flex align-items-center py-2 border-bottom border-gray-200">
+          <p class="fs-6 mx-6">1</p>
+          <img style="height: 72px; width: 72px" class="rounded-4 object-fit-cover" src="../assets/images/hot-8.jpg" alt="">
+          <div class="ms-6">
+            <p>這是哥的標題</p>
+            <p>這是哥的作者</p>
+          </div>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</div>
+
+<div class="bg-gray-100 rounded-main">
+  <div class="container py-20 px-lg-20">
+    <!-- <h2 class="mb-4 fs-8 bg-gray-900 text-primary w-fit-content px-2 py-1" style="transform: rotate(-2deg);">專輯</h2> -->
+    <h2 class="mb-4 pb-2 fs-8 text-center text-lg-start">專輯</h2>
+    <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-7-d500e10e.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-6-6c0b62e3.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="col">
+        <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+          <a href="#">
+            <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+          </a>
+          <div class="position-absolute bottom-0 start-0 end-0 p-2">
+            <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+              <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+              <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+              <div class="mt-3 d-flex gap-2">
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+                </button>
+                <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                  <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container py-20 px-lg-20">
+  <h2 class="mb-4 pb-2 fs-8 text-center text-lg-start">單曲</h2>
+  <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="/coMusic/assets/hot-8-0ada7322.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- <div class="mb-8">
+  <h2 class="mb-4 border-bottom pb-2 fs-6">專輯</h2>
+  
+  <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-6">
+    <li class="col">
+      <div class="card border-0 rounded-30 overflow-hidden position-relative" href="#">
+        <a href="#">
+          <img class="song-img object-fit-cover w-100" src="../assets/images/hot-8.jpg" alt="">
+        </a>
+        <div class="position-absolute bottom-0 start-0 end-0 p-2">
+          <div class="py-4 px-6 rounded-30 bg-black bg-opacity-50 filter-blur-5">
+            <h3><a class="fs-5 text-white" href="#">我是音樂標題</a></h3>
+            <h4 class="mb-2"><a class="fs-4 text-gray-100" href="#">我是作者名稱</a></h4>
+            <div class="mt-3 d-flex gap-2">
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-heart-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-3 fw-700 bi bi-share-fill text-white"></i>
+              </button>
+              <button class="btn border border-2 border-white d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+                <i class="fs-4 fw-700 bi bi-plus-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col">
+      <div class="card border-0 p-4" href="#">
+        <img src="../assets/images/hot-7.jpg" class="rounded-30 object-fit-cover" style="aspect-ratio: 1/1;;" alt="">
+        <div class="p-4">
+          <h3><a class="fs-5" href="#">我是音樂標題</a></h3>
+          <h4 class="mb-2"><a class="fs-4 text-gray-600" href="#">我是作者名稱</a></h4>
+          <div class="mt-3 d-flex gap-2">
+            <button class="btn border border-2 border-gray-600 d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+              <i class="fs-3 fw-700 bi bi-heart-fill text-gray-600"></i>
+            </button>
+            <button class="btn border border-2 border-gray-600 d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+              <i class="fs-3 fw-700 bi bi-share-fill text-gray-600"></i>
+            </button>
+            <button class="btn border border-2 border-gray-600 d-flex align-items-center justify-content-center rounded-circle" style="height: 36px; width: 36px;">
+              <i class="fs-4 fw-700 bi bi-plus-lg text-gray-600"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> -->                    </div>
+                    <div class="tab-pane fade" id="create">
+                      <div class="row">
+  <div class="col-6">
+    <div class="card" style="height: 296px">
+      我是內容
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" style="height: 296px">
+      我是內容
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" style="height: 296px">
+      我是內容
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" style="height: 296px">
+      我是內容
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" style="height: 296px">
+      我是內容
+    </div>
+  </div>
+</div>                    </div>
+                    <div class="tab-pane fade" id="favorite">
+                      個人收藏
+                    </div>
+                    <div class="tab-pane fade" id="about">
+                      關於我
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+</body>
+
+</html>
