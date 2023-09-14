@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./layout/meta'); -%>
+  <title>coMusic | 排行榜</title>
+
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="pt-18 pt-lg-0 overflow-hidden">
+      <div class="container my-18">
+        <h2 class="my-10 pt-12 pb-5 border-bottom border-light">排行榜</h2>
+        <div class="row">
+          <div class="col-lg-4 bg-light rounded-5 py-5 px-2">
+            <h4 class="m-3">分類排行榜</h4>
+            <ul class="list-unstyled m-4">
+              <li class="my-3"><a class="list-charts current d-block link-dark py-1" href="#">即時熱門</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">所有類型</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">民謠/抒情/Acapella/成人當代</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">搖滾/另類/金屬/龐克</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">嘻哈/饒舌/雷鬼/Funk</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">舞曲/Remix/ACG/電音</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">R&B/靈魂/藍調/爵士/拉丁</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">古典/演奏/New Age</a></li>
+              <li class="my-3"><a class="list-charts d-block link-dark py-1" href="#">世界音樂/民樂/傳統戲曲/說唱藝術</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="container">
+              <div class="d-flex justify-content-sm-between align-items-center mb-8">
+                <h3 class="">即時熱門</h3>
+                <a href="#" class="btn btn-primary d-inline-block px-6 py-2 d-flex align-items-center">
+                  <span class="material-icons" style="font-size: 20px;">play_arrow</span> 全部播放
+                </a>
+              </div>
+              <table class="table align-middle text-center table-hover">
+                <thead>
+                  <tr class="text-gray-400  align-middle">
+                    <td width="5%">#</td>
+                    <td width="5%" class="table-hidden"></td>
+                    <td></td>
+                    <td class="text-start table-full">歌曲名稱</td>
+                    <td class="table-hidden text-end"></td>
+                    <td class="text-end table-hidden">播放數</td>
+                    <td class="table-hidden">
+                      <span class="material-icons align-middle fs-5 mb-1">schedule</span>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">八寶公主</p>
+                      <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">51,167</td>
+                    <td class="table-hidden">3:12</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-danger">expand_less</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-2.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">你早已不在我身旁 (溫柔版)</p>
+                      <p class="text-gray-400 mb-0 py-0">八青哥</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">48,167</td>
+                    <td class="table-hidden">4:52</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-3.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">人生公開說明書</p>
+                      <p class="text-gray-400 mb-0 py-0">Traveller旅人</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">43,217</td>
+                    <td class="table-hidden">5:21</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-4.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">反烏托邦 Dystopia</p>
+                      <p class="text-gray-400 mb-0 py-0">昴宿 Pleiades</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">34,573</td>
+                    <td class="table-hidden">4:48</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-5.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">離開台北市我裸體</p>
+                      <p class="text-gray-400 mb-0 py-0">NeaR Band 你家附近的阿伯</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">31,244</td>
+                    <td class="table-hidden">3:42</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-danger">expand_less</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-6.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">今天沒呼吸的心情</p>
+                      <p class="text-gray-400 mb-0 py-0">森森鈴蘭Lily_linglan</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">29,345</td>
+                    <td class="table-hidden">5:12</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-7.jpg" class="hot-img rounded-4" alt="">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">給你的光</p>
+                      <p class="text-gray-400 mb-0 py-0">自言自語Murmur</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">27,495</td>
+                    <td class="table-hidden">4:32</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-8.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">你以外的日常(ft. 理想混蛋 雞丁)</p>
+                      <p class="text-gray-400 mb-0 py-0">Who Cares 胡凱兒</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">22,346</td>
+                    <td class="table-hidden">3:36</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-9.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">失落樂園</p>
+                      <p class="text-gray-400 mb-0 py-0">Annie 張苡宸</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">18,493</td>
+                    <td class="table-hidden">3:56</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-10.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">也許啊 Maybe</p>
+                      <p class="text-gray-400 mb-0 py-0">鄒序 hogan</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">16,342</td>
+                    <td class="table-hidden">4:05</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">八寶公主是一首歌曲名稱很長很長很長的歌，八寶公主是一首歌曲名稱很長很長很長的歌</p>
+                      <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">51,167</td>
+                    <td class="table-hidden">3:12</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-danger">expand_less</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-2.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">你早已不在我身旁 (溫柔版)</p>
+                      <p class="text-gray-400 mb-0 py-0">八青哥</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">48,167</td>
+                    <td class="table-hidden">4:52</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-3.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">人生公開說明書</p>
+                      <p class="text-gray-400 mb-0 py-0">Traveller旅人</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">43,217</td>
+                    <td class="table-hidden">5:21</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-4.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">反烏托邦 Dystopia</p>
+                      <p class="text-gray-400 mb-0 py-0">昴宿 Pleiades</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">34,573</td>
+                    <td class="table-hidden">4:48</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-5.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">離開台北市我裸體</p>
+                      <p class="text-gray-400 mb-0 py-0">NeaR Band 你家附近的阿伯</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">31,244</td>
+                    <td class="table-hidden">3:42</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-danger">expand_less</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-6.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">今天沒呼吸的心情</p>
+                      <p class="text-gray-400 mb-0 py-0">森森鈴蘭Lily_linglan</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">29,345</td>
+                    <td class="table-hidden">5:12</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-7.jpg" class="hot-img rounded-4" alt="">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">給你的光</p>
+                      <p class="text-gray-400 mb-0 py-0">自言自語Murmur</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">27,495</td>
+                    <td class="table-hidden">4:32</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-8.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">你以外的日常(ft. 理想混蛋 雞丁)</p>
+                      <p class="text-gray-400 mb-0 py-0">Who Cares 胡凱兒</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">22,346</td>
+                    <td class="table-hidden">3:36</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td class="table-hidden">
+                      <span class="material-icons">remove</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-9.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">失落樂園</p>
+                      <p class="text-gray-400 mb-0 py-0">Annie 張苡宸</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">18,493</td>
+                    <td class="table-hidden">3:56</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td class="table-hidden">
+                      <span class="material-symbols-outlined text-success">expand_more</span>
+                    </td>
+                    <td>
+                      <img src="../assets/images/hot-10.jpg" class="hot-img rounded-4" alt="song-cover">
+                    </td>
+                    <td class="text-start">
+                      <p class="my-0 py-0 mb-1">也許啊 Maybe</p>
+                      <p class="text-gray-400 mb-0 py-0">鄒序 hogan</p>
+                    </td>
+                    <td class="table-hidden">
+                      <div class="d-flex gap-2 justify-content-end">
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </a>
+                        <a class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="text-end table-hidden">16,342</td>
+                    <td class="table-hidden">4:05</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <a href="#" class="btn-base btn-sec mt-auto mx-auto w-fit-content">點我聽更多</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

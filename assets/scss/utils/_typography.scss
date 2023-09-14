@@ -1,3 +1,14 @@
+// 字體
+.font-lemon{
+  font-family: Lemon;
+}
+
+.font-jost{
+  font-family: 'Jost', sans-serif;
+}
+
+
+// logo 標題替代
 .text-replace {
   width: 0px;
   height: 0px;
@@ -6,6 +17,20 @@
   overflow: hidden;
 }
 
-.font-lemon{
-  font-family: Lemon;
+
+// 字數限制
+@mixin ellipsis($value){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $value;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.ellipsis-2 { 
+  @include ellipsis(2)
+}
+
+.ellipsis-3 { 
+  @include ellipsis(3)
 }

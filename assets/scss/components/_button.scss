@@ -1,8 +1,30 @@
+.btn {
+
+  .btn-check:checked+&,
+  :not(.btn-check)+&:active,
+  &:first-child:active,
+  &.active,
+  &.show {
+    border-color: transparent;
+  }
+}
+
+.btn{
+  .btn-check:checked + &,
+  :not(.btn-check) + &:active,
+  &:first-child:active,
+  &.active,
+  &.show {
+    border-color: transparent;
+  }
+}
 
 .btn-base {
   border: none;
   padding: .5rem 2.5rem;
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-main {
@@ -22,7 +44,7 @@
 
 .btn-sec {
   color: $gray-900;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid $gray-900;
 
   &:hover {

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./layout/meta'); -%>
+    <title>coMusic | 音樂人</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+      <div class="page-top">
+        <!-- banner -->
+        <div class="bg-gray-900 pt-12 pt-lg-15 pb-50" style="margin-bottom: -150px">
+          <div class="container text-white d-lg-flex justify-content-lg-between align-items-end">
+            <h2 class="fs-10 fs-md-14 fs-lg-30 fw-700">
+              Found you <br> Favorite <br> <span class="fs-12 fs-md-20 fs-lg-34 bg-primary text-gray-900 d-block w-fit-content px-6">Musician.</span>
+            </h2>
+            <p class="fs-8 fs-lg-12 fw-700 mt-4 mt-lg-0">創作無所不在</p>
+          </div>
+        </div>
+
+        <!-- 你最喜歡的音樂人 -->
+        <div class="position-relative pb-16 pb-lg-24">
+          <div class="container bg-radius-right">
+            <div class="row justify-content-between">
+              <div class="col-lg-7 order-1" style="z-index: 2">
+                <div class="pt-19">
+                  <h2 class="fs-8 mb-8 text-center text-lg-start">你最喜歡的音樂人</h2>
+                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+                    <%- include('./layout/musician-list'); -%>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
+                <div class="pt-19 position-sticky top-0 musican-touch">
+                  <div style="height: 400px;" class="overflow-hidden rounded-30 position-relative mb-4">
+                    <img class="w-100 h-100 object-fit-cover object-position-center" src="../assets/images/music-musican-14.jpg" alt="musician">
+                    <span class="position-absolute top-0 end-0 bg-primary me-8 pt-4 px-2 pb-2 fw-600" style="border-radius: 0 0 10px 10px;">本週最愛</span>
+                  </div>
+                  <div class="px-4">
+                    <h3 class="mb-2 d-block text-black fs-8 fw-600">沈默紳士<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
+                    <p class="text-justify ellipsis-3 mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                    <a href="musician-info.html" class="mb-2 stretched-link text-secondary d-block text-end">查看更多</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 推薦音樂人 -->
+        <div class="position-relative pb-16 pb-lg-24">
+          <div class="container bg-radius-left">
+            <div class="row justify-content-between">
+              <div class="col-lg-7" style="z-index: 2">
+                <div class="pt-19">
+                  <h2 class="fs-8 mb-8 text-center text-lg-start">推薦音樂人</h2>
+                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+                    <%- include('./layout/musician-list'); -%>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
+                <div class="pt-19 position-sticky top-0 musican-touch">
+                  <div style="height: 400px;" class="overflow-hidden rounded-30 position-relative mb-4">
+                    <img class="w-100 h-100 object-fit-cover object-position-center" src="../assets/images/music-musican-14.jpg" alt="">
+                    <span class="position-absolute top-0 end-0 bg-primary me-8 pt-4 px-2 pb-2 fw-600" style="border-radius: 0 0 10px 10px;">本月強力推薦</span>
+                  </div>
+                  <div class="px-4">
+                    <h3 class="mb-2 d-block text-black fs-8 fw-600">沈默紳士<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
+                    <p class="text-justify ellipsis-3 mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                    <a href="musician-info.html" class="mb-2 stretched-link text-secondary d-block text-end">查看更多</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 音樂人物誌 -->
+        <div class="pb-16 pb-lg-24">
+          <div class="container pt-19">
+            <h2 class="fs-8 mb-8 text-center text-lg-start">音樂人物誌</h2>
+            <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+              <%- include('./layout/musician-article-list'); -%>
+            </ul>
+            <div class="mt-12 d-flex justify-content-center">
+              <%- include('./layout/pagination'); -%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

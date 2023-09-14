@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coMusic | 探索</title>
-    <!--google icon-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%- include('./layout/meta'); -%>
+        <title>coMusic | 探索</title>
+        <!--google icon-->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +16,7 @@
 
         <main class="pt-20">
 
-            <!--音樂類型 輪播btn不能被觸發-->
+            <!--音樂類型-->
             <div class="mt-4 mt-lg-8 mb-16 mb-lg-20">
                 <div class="container">
                     <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">音樂類型</h2>
@@ -99,6 +97,42 @@
                                         原聲帶</p>
                                 </a>
                             </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-4.jpg" alt="搖滾樂"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        搖滾樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-3.jpg" alt="爵士樂"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        爵士樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-1.jpg" alt="嘻哈樂"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        嘻哈樂</p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" class="d-block rounded-20 rounded-lg-30 overflow-hidden position-relative">
+                                    <img src="/assets/images/music-type-2.jpg" alt="華語流行"
+                                        class="w-100 music-type-img object-fit-cover" style="height: 212px">
+                                    <p
+                                        class="position-absolute bottom-0 start-0 end-0 bg-opacity-50 py-4 text-white text-center">
+                                        華語流行</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -113,10 +147,10 @@
                     <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">熱門合輯</h2>
                 </div>
                 <div class="container">
-                    <!--PC 為什麼變成直的排列？ rounded顯示不出來-->
-                    <div class="row d-none d-lg-block">
+                    <!--PC rounded顯示不出來-->
+                    <div class="row d-none d-lg-block d-lg-flex">
                         <div class="col-lg-4 mb-4">
-                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                            <a href="search-more.html" class="d-block rounded-20 rounded-lg-30 position-relative">
                                 <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
                                     class="w-100 object-fit-cover object-position-10 hit-img">
                                 <button class="btn position-absolute top-50 start-50 translate-middle" type="play">
@@ -125,7 +159,7 @@
                                     </span>
                                 </button>
                                 <h4
-                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center">
+                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center bg-opacity-50 w-100">
                                     coMusic推薦</h4>
                             </a>
                         </div>
@@ -140,7 +174,7 @@
                                 </button>
 
                                 <h4
-                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center">
+                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center bg-opacity-50 w-100">
                                     熱門歌曲</h4>
                             </a>
                         </div>
@@ -155,31 +189,31 @@
                                 </button>
 
                                 <h4
-                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center">
+                                    class="position-absolute bottom-0 start-50 translate-middle-x py-4 text-white text-center bg-opacity-50 w-100">
                                     最多收藏</h4>
                             </a>
                         </div>
                     </div>
 
 
-                    <!--MOBILE 本來container層有加vw-100, 但會產生x軸-->
+                    <!--MOBILE-->
                     <div class="container d-lg-none">
                         <!--coMusic推薦-->
                         <div class="d-flex justify-content-between mb-4">
                             <h4 class="text-dark">
                                 coMusic推薦</h4>
-                            <a href="#">
+                            <a href="search-more.html">
                                 <p class="text-dark">更多</p>
                             </a>
                         </div>
                         <!--swiper-->
-                        <div class="swiper hitSwiper">
+                        <div class="swiper hitSwiper mb-4">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide col-6 me-4">
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -198,7 +232,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -217,7 +251,45 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -236,7 +308,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -253,13 +325,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <div class="swiper-scrollbar position-static" style="height: 10px"></div>
-                            </div>
-                        </div>
 
-                        <!--熱門歌曲 swiper scrollbar的primary顏色出不來-->
+
+                        <!--熱門歌曲-->
                         <div class="d-flex justify-content-between mb-4">
                             <h4 class="text-dark">
                                 熱門歌曲</h4>
@@ -268,13 +336,13 @@
                             </a>
                         </div>
                         <!--swiper-->
-                        <div class="swiper hitSwiper">
+                        <div class="swiper hitSwiper mb-4">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide col-6 me-4">
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -293,7 +361,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -312,7 +380,45 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -331,7 +437,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -348,12 +454,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <div class="swiper-scrollbar position-static" style="height: 10px"></div>
-                            </div>
-                        </div>
-                        <!--最多收藏 swiper scrollbar的primary顏色出不來-->
+
+                        <!--最多收藏-->
                         <div class="d-flex justify-content-between mb-4">
                             <h4 class="text-dark">
                                 最多收藏</h4>
@@ -362,13 +464,13 @@
                             </a>
                         </div>
                         <!--swiper-->
-                        <div class="swiper hitSwiper">
+                        <div class="swiper hitSwiper mb-4">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide col-6 me-4">
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -387,7 +489,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -406,7 +508,45 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
+                                            <button class="btn position-absolute top-50 start-50 translate-middle"
+                                                type="play">
+                                                <span class="material-icons text-primary play-btn">
+                                                    play_circle_filled
+                                                </span>
+                                            </button>
+                                            <div
+                                                class="bg-opacity-50 position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100">
+                                                <p class="mb-2">今天可不可以不回家</p>
+                                                <p class="mb-0">LUCKY-RIRI</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide col-6 me-4">
+                                    <div>
+                                        <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
+                                            <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -425,7 +565,7 @@
                                     <div>
                                         <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative">
                                             <img src="/assets/images/music-musican-4.jpg" alt="專輯封面"
-                                                class="w-100 object-fit-cover object-position-10" style="height: 270px">
+                                                class="w-100 object-fit-cover object-position-10" style="height: 200px">
                                             <button class="btn position-absolute top-50 start-50 translate-middle"
                                                 type="play">
                                                 <span class="material-icons text-primary play-btn">
@@ -441,11 +581,6 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-8">
-                                <div class="swiper-scrollbar position-static" style="height: 10px"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -676,7 +811,7 @@
                                 <p class="col-1 d-none d-md-block">3:12</p>
                             </li>
                         </ul>
-                        <div class="col-6 col-md-4 text-center mx-auto">
+                        <div class="col-7 col-md-4 text-center mx-auto">
                             <button class="btn btn-outline-gray-900 py-2 px-10">點我聽更多</button>
                         </div>
                     </div>

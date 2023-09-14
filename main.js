@@ -44,7 +44,7 @@ const commentSwiper = new Swiper(".commentSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
-  
+
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -73,6 +73,39 @@ const commentSwiper = new Swiper(".commentSwiper", {
   },
 });
 
+// Search swiper
+const searchSwiper = new Swiper(".searchSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    }
+  },
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    clickable: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // aos
 AOS.init();
@@ -80,8 +113,8 @@ AOS.init();
 
 // jQuery
 // Signin/ login
-$('.needs-validation').each(function(index) {
-  $(this).on('submit', function(e) {
+$('.needs-validation').each(function (index) {
+  $(this).on('submit', function (e) {
     e.preventDefault();
     $(this).addClass('was-validated');
   });
@@ -100,3 +133,4 @@ const hitSwiper = new Swiper(".hitSwiper", {
   },
   slidesPerView: "auto",
 });
+
