@@ -1,7 +1,3 @@
-.rounded-bottom-30 {
-  border-radius: 0 0 40px 40px;
-}
-
 .musican-screen {
   height: auto;
 
@@ -88,6 +84,7 @@
 
 .box-hover{
   color: $gray-900;
+  background-color: #fff;
 
   &:hover{
     color: $white;
@@ -113,5 +110,28 @@
 
   @include media-breakpoint-up(lg) {
     height: calc(100vh / 5 * 3);
+  }
+}
+
+.music-hover{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  transform: all 1s ease;
+
+  &>span{
+    transform: translateY(60px);
+  }
+  
+  &:hover{
+    background: #00000030;
+    backdrop-filter: blur(1px);
+
+    &>span{
+      transform: translateY(0px);
+    }
   }
 }
