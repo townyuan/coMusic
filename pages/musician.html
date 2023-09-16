@@ -28,9 +28,9 @@
               <div class="col-lg-7 order-1" style="z-index: 2">
                 <div class="pt-19">
                   <h2 class="fs-8 mb-8 text-center text-lg-start">你最喜歡的音樂人</h2>
-                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
-                    <%- include('./layout/musician-list'); -%>
-                  </ul>
+                  <div class="musician-favorite">
+                    <%- include('./components/musician-list'); -%>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
@@ -57,20 +57,20 @@
               <div class="col-lg-7" style="z-index: 2">
                 <div class="pt-19">
                   <h2 class="fs-8 mb-8 text-center text-lg-start">推薦音樂人</h2>
-                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
-                    <%- include('./layout/musician-list'); -%>
-                  </ul>
+                  <div class="musician-recommed">
+                    <%- include('./components/musician-list'); -%>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
                 <div class="pt-19 position-sticky top-0 musican-touch">
                   <div style="height: 400px;" class="overflow-hidden rounded-30 position-relative mb-4">
-                    <img class="w-100 h-100 object-fit-cover object-position-center" src="../assets/images/music-musican-14.jpg" alt="">
+                    <img class="w-100 h-100 object-fit-cover object-position-top" src="../assets/images/music-musican-13.jpg" alt="musician">
                     <span class="position-absolute top-0 end-0 bg-primary me-8 pt-4 px-2 pb-2 fw-600" style="border-radius: 0 0 10px 10px;">本月強力推薦</span>
                   </div>
                   <div class="px-4">
-                    <h3 class="mb-2 d-block text-black fs-8 fw-600">沈默紳士<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
-                    <p class="text-justify ellipsis-3 mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                    <h3 class="mb-2 d-block text-black fs-8 fw-600">八三二十五<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
+                    <p class="text-justify ellipsis-3 mb-2">深具獨特魅力的歌手，他的音樂風格糅合了多種元素，將流行、搖滾、以及情感深刻的歌詞融為一體，呈現出令人難以忘懷的音樂體驗。他的音樂作品多才多藝，時而充滿能量，時而溫柔感人，總能觸動聽眾的心靈。</p>
                     <a href="musician-info.html" class="mb-2 stretched-link text-secondary d-block text-end">查看更多</a>
                   </div>
                 </div>
@@ -79,21 +79,20 @@
           </div>
         </div>
 
-        <!-- 音樂人物誌 -->
+        <!-- 音樂人專欄 -->
         <div class="pb-16 pb-lg-24">
           <div class="container pt-19">
-            <h2 class="fs-8 mb-8 text-center text-lg-start">音樂人物誌</h2>
-            <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
-              <%- include('./layout/musician-article-list'); -%>
-            </ul>
-            <div class="mt-12 d-flex justify-content-center">
-              <%- include('./layout/pagination'); -%>
-            </div>
+            <h2 class="fs-8 mb-8 text-center text-lg-start">音樂人專欄</h2>
+            <%- include('./components/article-list'); -%>
+              <div class="mt-12 d-flex justify-content-center">
+                <%- include('./components/pagination'); -%>
+              </div>
           </div>
         </div>
       </div>
     </main>
 
+    <%- include('./layout/player'); -%>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
 </body>
