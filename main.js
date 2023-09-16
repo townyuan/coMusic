@@ -112,16 +112,16 @@ const searchSwiper = new Swiper(".searchSwiper", {
 // playlist -1
 const playList1 = new Swiper(".sw1", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 12,
   loop: true,
   breakpoints: {
-    576: {
+    640: {
       slidesPerView: 2,
-      spaceBetween: 12,
+      slidesPerGroup: 2,
     },
     992: {
       slidesPerView: 4,
-      spaceBetween: 12,
+      slidesPerGroup: 2,
     }
   },
   navigation: {
@@ -132,17 +132,17 @@ const playList1 = new Swiper(".sw1", {
 });
 // playlist -2
 const layList2 = new Swiper(".sw2", {
-  slidesPerView: 4,
-  spaceBetween: 10,
+  slidesPerView: 1,
+  spaceBetween: 12,
   loop: true,
   breakpoints: {
-    576: {
+    640: {
       slidesPerView: 2,
-      spaceBetween: 12,
+      slidesPerGroup: 2,
     },
     992: {
       slidesPerView: 4,
-      spaceBetween: 12,
+      slidesPerGroup: 2,
     }
   },
   navigation: {
