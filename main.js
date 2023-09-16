@@ -107,6 +107,45 @@ const searchSwiper = new Swiper(".searchSwiper", {
   },
 });
 
+
+
+// playlist
+const swPlaylist1 = new Swiper(".sw1", {
+  slidesPerView: "auto",
+  slidesPerView: 1,
+  spaceBetween: 10,
+  noSwiping: true,
+  autoplay: {
+    delay: 1000,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 12,
+      autoplay: {
+        enabled: true,
+      }
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 12,
+      autoplay: {
+        enabled: false,
+      }
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
+
+
+
+
 // aos
 AOS.init();
 
@@ -133,4 +172,6 @@ const hitSwiper = new Swiper(".hitSwiper", {
   },
   slidesPerView: "auto",
 });
+
+
 
