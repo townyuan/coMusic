@@ -74,12 +74,11 @@ const commentSwiper = new Swiper(".commentSwiper", {
 });
 
 
-// playlist -1
+// playlist-1
 const swOne = new Swiper(".swOne", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
-
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -90,25 +89,37 @@ const swOne = new Swiper(".swOne", {
       spaceBetween: 24,
     }
   },
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
   navigation: {
     nextEl: ".swiper-button-next-swOne",
     prevEl: ".swiper-button-prev-swOne",
     clickable: true,
   },
+});
 
-  pagination: {
-    el: ".swiper-pagination",
+// playlist-2
+const swTwo = new Swiper(".swTwo", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-swTwo",
+    prevEl: ".swiper-button-prev-swTwo",
     clickable: true,
   },
 });
 
-const swTwo = new Swiper(".swTwo", {
+// playlist-3
+const swThree = new Swiper(".swThree", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
@@ -123,23 +134,34 @@ const swTwo = new Swiper(".swTwo", {
       spaceBetween: 24,
     }
   },
-
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-
   navigation: {
-    nextEl: ".swiper-button-next-swTwo",
-    prevEl: ".swiper-button-prev-swTwo",
-    clickable: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
+    nextEl: ".swiper-button-next-swThree",
+    prevEl: ".swiper-button-prev-swThree",
     clickable: true,
   },
 });
 
+// playlist-4
+const swFour = new Swiper(".swFour", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-swFour",
+    prevEl: ".swiper-button-prev-swFour",
+    clickable: true,
+  },
+});
 
 // Search swiper
 // const searchSwiper = new Swiper(".searchSwiper", {

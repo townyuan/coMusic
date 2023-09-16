@@ -1,6 +1,16 @@
 .playlist-cover{
-  min-height: 200px;
+  min-height: 240px;
   overflow: hidden;
   text-align: center;
-  background-size: cover;
+  object-fit: cover;
+}
+
+.playlist-card{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  img{
+    min-height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+  }
 }
