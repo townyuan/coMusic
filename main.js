@@ -86,7 +86,7 @@ const swOne = new Swiper(".swOne", {
       spaceBetween: 24,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 24,
     }
   },
@@ -103,7 +103,7 @@ const swOne = new Swiper(".swOne", {
   },
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-swOne",
     clickable: true,
   },
 });
@@ -135,7 +135,7 @@ const swTwo = new Swiper(".swTwo", {
     clickable: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-swTwo",
     clickable: true,
   },
 });
