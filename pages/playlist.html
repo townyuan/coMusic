@@ -17,235 +17,829 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <!-- <div class="">
-      <div class="container my-18">
-        <h2 class="my-10 pt-12 pb-5 border-bottom border-light">歌單</h2>
-      </div>
-    </div> -->
-
-    <!-- list 1 -->
+    <!-- playlist 1 -->
     <div class="bg-gray-800 pt-18">
       <div class="container py-12">
         <div class="row justify-content-end">
-          <div class="col-lg-10 pb-5 ps-8">
+          <div class="col-xl-10 pb-5 ps-8">
             <h3 class="text-white">熱推人氣王</h3>
             <p class="text-white mb-2">樂迷熱推 TOP 50，訂閱各分類歌單，最流行的歌曲現在就跟上！</p>
             <a href="#" class="btn btn-primary py-2 px-6 border-1 bg-primary rounded-5 my-2">查看全部歌單</a>
           </div>
-          <div class="col-lg-10 g-0 position-relative px-6">
-            <div class="swiper sw1">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-01.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+          <div class="col-xl-10 g-xl-0 position-relative px-6">
+            <div class="swiper swOne">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-01.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-02.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源2</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-02.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-03.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源3</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-03.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-04.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-04.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-05.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-05.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-06.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-06.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-            <div class="swiper-button-prev z-3"></div>
-            <div class="swiper-button-next z-3"></div>
+            <button class="swiper-button-prev swiper-btn swiper-button-prev-swOne">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="swiper-button-next swiper-btn swiper-button-next-swOne">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- list 2 -->
+    <!-- playlist 2 -->
     <div class="bg-primary">
       <div class="container py-12">
         <div class="row justify-content-start">
-          <div class="col-lg-10 pb-5 ps-8">
+          <div class="col-xl-10 pb-5 ps-8">
             <h3 class="text-gray-800">情境歌單</h3>
             <p class="text-gray-800 mb-2">現在你的心情如何？選個符合當下的情境歌單，讓音樂無處不在，陪你上班、通勤、散步…</p>
             <a href="#" class="btn btn-gray-800 py-2 px-6 border-1 text-white rounded-5 my-2">查看全部歌單</a>
           </div>
-          <div class="col-lg-10 g-0 position-relative px-6">
-            <div class="swiper sw2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-07.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+          <div class="col-xl-10 g-xl-0 position-relative px-6">
+            <div class="swiper swTwo">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-07.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-08.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-08.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-09.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-09.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-10.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-10.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-11.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-11.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide px-4 py-6 bg-white broder-1 border-danger rounded-5">
-                  <a href="#" class="d-block mb-4">
-                    <img class="playlist-cover" src="/assets/images/playlist-12.jpg" alt="playlist">
-                  </a>
-                  <p class="fs-5 fw-bold">根源</p>
-                  <p class="fs-4 mb-3">農村武裝青年</p>
-                  <span class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 rounded-5 text-gray text-black-50 w-50">
-                    <span class="material-symbols-outlined fs-5 me-1">heart_plus</span>
-                    560
-                  </span>
-                  <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
-                    <p class="text-gray-600">40首歌</p>
-                    <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-12.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-            <div class="swiper-button-prev z-3"></div>
-            <div class="swiper-button-next z-3"></div>
+            <button class="swiper-button-prev swiper-btn swiper-button-prev-swTwo z-3">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="swiper-button-next swiper-btn swiper-button-next-swTwo z-3">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
+    <!-- playlist 3 -->
+    <div class="bg-gray-800">
+      <div class="container py-12">
+        <div class="row justify-content-end">
+          <div class="col-xl-10 pb-5 ps-8">
+            <h3 class="text-white">主題企劃</h3>
+            <p class="text-white mb-2">快跟上腳步！音樂時事、主題、音樂祭…各種潮樂不容錯過！</p>
+            <a href="#" class="btn btn-primary py-2 px-6 border-1 text-gray-800 rounded-5 my-2">查看全部歌單</a>
+          </div>
+          <div class="col-xl-10 g-xl-0 position-relative px-6">
+            <div class="swiper swThree">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-13.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-14.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-15.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-16.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-17.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-18.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="swiper-button-prev swiper-btn swiper-button-prev-swThree z-3">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="swiper-button-next swiper-btn swiper-button-next-swThree z-3">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- playlist 4 -->
+    <div class="bg-primary">
+      <div class="container py-12">
+        <div class="row justify-content-start">
+          <div class="col-xl-10 pb-5 ps-8">
+            <h3 class="text-gray-800">也許你也會喜歡</h3>
+            <p class="text-gray-800 mb-2">我們試圖了解你，根據你最近聽過的音樂，推薦給你！</p>
+            <a href="#" class="btn btn-gray-800 py-2 px-6 border-1 text-white rounded-5 my-2">查看全部歌單</a>
+          </div>
+          <div class="col-xl-10 g-xl-0 position-relative px-6">
+            <div class="swiper swFour">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-19.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-20.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-21.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-22.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-23.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="px-4 py-6 bg-white rounded-5">
+                    <a href="#" class="d-block mb-4">
+                      <img class="playlist-cover" src="/assets/images/playlist-24.jpg" alt="playlist">
+                    </a>
+                    <p class="fs-5 fw-bold">根源</p>
+                    <p class="fs-4 mb-3">農村武裝青年</p>
+                    <div class="d-flex align-items-center">
+                      <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                        <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                        560
+                      </a>
+                      <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                      </a>
+                    </div>
+                    <div class="border-top border-light pt-5 mt-5 d-none d-md-block">
+                      <p class="text-gray-600">40首歌</p>
+                      <p class="text-gray-600">發佈更新 2023 年 9 月 15 日</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="swiper-button-prev swiper-btn swiper-button-prev-swFour">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="swiper-button-next swiper-btn swiper-button-next-swFour">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="my-10">XXX</div>
+    <!-- all playlist -->
+    <div class="bg-white py-10 py-lg-20">
+      <div class="container">
+        <div class="d-flex align-items-center flex-wrap justify-content-lg-between pb-4 border-bottom border-gray-200 mb-5">
+          <h3 class="my-3 mb-lg-0 me-4">全部歌單</h3>
+          <ul class="d-flex">
+            <li class="me-2"><a href="#" class="btn btn-gray-200 text-gray-600 px-4 py-2">最新上傳</a></li>
+            <li class="me-2"><a href="#" class="btn btn-gray-200 text-gray-600 px-4 py-2">最多播放</a></li>
+            <li class=""><a href="#" class="btn btn-gray-200 text-gray-600 px-4 py-2">最多收藏</a></li>
+          </ul>
+        </div>
+        <ul class="row">
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-25.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-26.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-27.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-28.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-29.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-30.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-31.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-32.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-33.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-34.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-35.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-xl-3 mb-5">
+            <div class="playlist-card px-4 py-6 rounded-5">
+              <a href="#" class="d-block mb-4">
+                <img class="" src="/assets/images/playlist-36.jpg" alt="playlist">
+              </a>
+              <p class="fs-5 fw-bold">根源</p>
+              <p class="fs-4 mb-3">農村武裝青年</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center border border-1 border-gray-300 py-1 px-5 rounded-5 text-gray text-black-50 me-2">
+                  <span class="material-symbols-outlined fs-5 me-1">queue_music</span>
+                  560
+                </a>
+                <a href="#" class="link-secondary"><span class="material-symbols-outlined text-gray-300 fs-6 mt-2">add_circle</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="my-8 text-center">
+          <a href="#" class="btn btn-gray-200 text-gray-600 px-20 py-2">點我看更多</a>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
