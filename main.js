@@ -43,7 +43,7 @@ const newsSwiper = new Swiper(".newSwiper", {
 const commentSwiper = new Swiper(".commentSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
-  loop: true,
+  // loop: true,
 
   breakpoints: {
     768: {
@@ -77,7 +77,7 @@ const commentSwiper = new Swiper(".commentSwiper", {
 const searchSwiper = new Swiper(".searchSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
-  loop: true,
+  // loop: true,
 
   breakpoints: {
     768: {
@@ -109,34 +109,46 @@ const searchSwiper = new Swiper(".searchSwiper", {
 
 
 
-// playlist
-const swPlaylist1 = new Swiper(".sw1", {
-  slidesPerView: "auto",
+// playlist -1
+const playList1 = new Swiper(".sw1", {
   slidesPerView: 1,
   spaceBetween: 10,
-  noSwiping: true,
-  autoplay: {
-    delay: 1000,
-  },
+  loop: true,
   breakpoints: {
     576: {
       slidesPerView: 2,
       spaceBetween: 12,
-      autoplay: {
-        enabled: true,
-      }
     },
     992: {
       slidesPerView: 4,
       spaceBetween: 12,
-      autoplay: {
-        enabled: false,
-      }
     }
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    clickable: true,
+  },
+});
+// playlist -2
+const layList2 = new Swiper(".sw2", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 12,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 12,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+    clickable: true,
   },
 });
 
