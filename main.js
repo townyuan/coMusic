@@ -15,7 +15,7 @@ window.$ = jQuery;
 
 // JavaScript
 // News swiper
-const newsSwiper = new Swiper(".newSwiper", {
+const newsSwiper = new Swiper(".newsSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
@@ -27,8 +27,8 @@ const newsSwiper = new Swiper(".newSwiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-news",
+    prevEl: ".swiper-button-prev-news",
     clickable: true,
   },
 
@@ -43,7 +43,7 @@ const newsSwiper = new Swiper(".newSwiper", {
 const commentSwiper = new Swiper(".commentSwiper", {
   slidesPerView: 1,
   spaceBetween: 24,
-  // loop: true,
+  loop: true,
 
   breakpoints: {
     768: {
@@ -62,8 +62,8 @@ const commentSwiper = new Swiper(".commentSwiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-comment",
+    prevEl: ".swiper-button-prev-comment",
     clickable: true,
   },
 
@@ -73,11 +73,12 @@ const commentSwiper = new Swiper(".commentSwiper", {
   },
 });
 
-// Search swiper
-const searchSwiper = new Swiper(".searchSwiper", {
+
+// playlist -1
+const swOne = new Swiper(".swOne", {
   slidesPerView: 1,
   spaceBetween: 24,
-  // loop: true,
+  loop: true,
 
   breakpoints: {
     768: {
@@ -85,7 +86,7 @@ const searchSwiper = new Swiper(".searchSwiper", {
       spaceBetween: 24,
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 24,
     }
   },
@@ -96,8 +97,8 @@ const searchSwiper = new Swiper(".searchSwiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-swOne",
+    prevEl: ".swiper-button-prev-swOne",
     clickable: true,
   },
 
@@ -107,53 +108,84 @@ const searchSwiper = new Swiper(".searchSwiper", {
   },
 });
 
-
-
-// playlist -1
-const playList1 = new Swiper(".sw1", {
+const swTwo = new Swiper(".swTwo", {
   slidesPerView: 1,
-  spaceBetween: 12,
+  spaceBetween: 24,
   loop: true,
+
   breakpoints: {
-    640: {
+    768: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      spaceBetween: 24,
     },
     992: {
-      slidesPerView: 4,
-      slidesPerGroup: 2,
+      slidesPerView: 3,
+      spaceBetween: 24,
     }
   },
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-swTwo",
+    prevEl: ".swiper-button-prev-swTwo",
     clickable: true,
   },
-});
-// playlist -2
-const layList2 = new Swiper(".sw2", {
-  slidesPerView: 1,
-  spaceBetween: 12,
-  loop: true,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    992: {
-      slidesPerView: 4,
-      slidesPerGroup: 2,
-    }
-  },
-  navigation: {
-    nextEl: ".swiper-btn-next",
-    prevEl: ".swiper-btn-prev",
+  pagination: {
+    el: ".swiper-pagination",
     clickable: true,
   },
 });
 
 
+// Search swiper
+// const searchSwiper = new Swiper(".searchSwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 24,
+//   // loop: true,
 
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 24,
+//     },
+//     992: {
+//       slidesPerView: 4,
+//       spaceBetween: 24,
+//     }
+//   },
+
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//     clickable: true,
+//   },
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
+//scrollbar
+// const hitSwiper = new Swiper(".hitSwiper", {
+//   spaceBetween: 24,
+//   //滑鼠中間滾輪可滑動
+//   mousewheel: true,
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     draggable: true
+//   },
+//   slidesPerView: "auto",
+// });
 
 
 
@@ -170,20 +202,4 @@ $('.needs-validation').each(function (index) {
     $(this).addClass('was-validated');
   });
 });
-
-
-// 
-//scrollbar
-const hitSwiper = new Swiper(".hitSwiper", {
-  spaceBetween: 24,
-  //滑鼠中間滾輪可滑動
-  mousewheel: true,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true
-  },
-  slidesPerView: "auto",
-});
-
-
 
