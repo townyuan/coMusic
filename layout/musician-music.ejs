@@ -1,0 +1,32 @@
+<div class="container pt-6 pb-20 px-lg-20">
+  <div class="row gy-6">
+    <div class="col-lg-7">
+      <div class="musician-info-music d-flex flex-column h-100 text-center text-lg-start">
+        <h2 class="fs-7 mb-6 text-center text-lg-start text-gray-800">熱門作品</h2>
+        <%- include('./components/music-rank'); -%>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="musician-info-music d-flex flex-column h-100 text-center text-lg-start">
+        <h2 class="fs-7 mb-6 text-center text-lg-start text-gray-800">焦點作品</h2>
+        <%- include('./components/music-card'); -%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-100 rounded-up-right-120">
+  <div class="container py-20 px-lg-20">
+    <h2 class="fs-7 mb-6 text-center text-lg-start text-gray-800">專輯</h2>
+    <div class="musician-music-album">
+      <%- include('./components/music-list'); -%>
+    </div>
+  </div>
+</div>
+
+<div class="container py-20 px-lg-20">
+  <h2 class="fs-7 mb-6 text-center text-lg-start text-gray-800">單曲</h2>
+  <div class="musician-music-single">
+    <%- include('./components/music-list'); -%>
+  </div>
+</div>
