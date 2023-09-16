@@ -1,8 +1,6 @@
-// .sw1{
-//   .swiper-button-prev{
-//     background-color: aqua;
-//   }
-//   .swiper-button-next{
-//     background-color: aqua !important;
-//   }
-// }
+.playlist-cover{
+  min-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  background-size: cover;
+}
