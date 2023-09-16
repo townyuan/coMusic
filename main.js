@@ -134,7 +134,6 @@ const swTwo = new Swiper(".swTwo", {
     prevEl: ".swiper-button-prev-swTwo",
     clickable: true,
   },
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
