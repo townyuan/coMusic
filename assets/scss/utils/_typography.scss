@@ -19,18 +19,12 @@
 
 
 // 字數限制
-@mixin ellipsis($value){
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $value;
-  line-height: 1.5;
-  overflow: hidden;
-}
-
-.ellipsis-2 { 
-  @include ellipsis(2)
-}
-
-.ellipsis-3 { 
-  @include ellipsis(3)
+@for $i from 1 through 3 {
+  .ellipsis-#{$i} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $i;
+    line-height: 1.5;
+    overflow: hidden;
+  }
 }

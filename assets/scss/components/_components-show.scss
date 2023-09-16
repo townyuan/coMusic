@@ -1,0 +1,71 @@
+
+.index-music-rank{
+  .music-rank-all{
+    tr:nth-child(n+12){
+      display: none;
+    }
+  }
+
+  .music-rank-person{
+    display: none;
+  }
+}
+
+.musician-info-music{
+  .today-music{
+    display: none;
+  }
+  .music-rank-all{
+    display: none;
+  }
+
+}
+
+.index-today{
+  .musician-focus{
+    display: none;
+  }
+}
+
+.musician-favorite{
+  .recommed-list{
+    display: none;
+  }
+}
+
+.musician-recommed{
+  .favorite-list{
+    display: none;
+  }
+}
+
+.musician-music-album{
+  .music-single,
+  .favorite-album,
+  .favorite-single{
+    display: none;
+  }
+}
+
+.musician-music-single{
+  .music-album,
+  .favorite-album,
+  .favorite-single{
+    display: none;
+  }
+}
+
+.musician-favorite-album{
+  .music-album,
+  .music-single,
+  .favorite-single{
+    display: none;
+  }
+}
+.musician-favorite-single{
+  .music-album,
+  .music-single,
+  .favorite-album{
+    display: none;
+  }
+}

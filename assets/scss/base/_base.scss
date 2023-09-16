@@ -87,7 +87,8 @@ hr {
   font-family: $headings-font-family;
   font-style: $headings-font-style;
   font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
+  // line-height: $headings-line-height;
+  line-height: 1.5; // *custom
   color: $headings-color;
 }
 
