@@ -2,346 +2,783 @@
 <html lang="en">
 
 <head>
-    <%- include('./layout/meta'); -%>
-        <title>coMusic | 探索</title>
+  <%- include('./layout/meta'); -%>
+    <title>coMusic | 探索</title>
 </head>
 
 <body>
-    <%- include('./layout/header'); -%>
-        <!--coMusic推薦-->
-        <main>
-            <!--banner-->
-            <div class="container-fluid bg-dark page-top">
-                <div class="container pt-12 pt-lg-15 pb-10">
-                    <div class="position-relative d-flex justify-content-center align-items-center">
-                        <img src="/assets/images/music-musican-5.jpg" alt="專輯封面"
-                            class="object-fit-cover hit-img opacity-75">
-                        <h4 class="text-primary text-center position-absolute top-50 start-50 translate-middle fs-10">
-                            coMusic
-                            推薦</h4>
-                    </div>
+  <%- include('./layout/header'); -%>
+    <!--coMusic推薦-->
+    <main>
+      <!--banner-->
+      <div class="container-fluid bg-dark page-top">
+        <div class="container pt-12 pt-lg-15 pb-10">
+          <div class="position-relative d-flex justify-content-center align-items-center">
+            <img src="/assets/images/music-musican-5.jpg" alt="專輯封面" class="object-fit-cover hit-img opacity-75">
+            <h4 class="text-primary text-center position-absolute top-50 start-50 translate-middle fs-10">
+              coMusic
+              推薦</h4>
+          </div>
+        </div>
+      </div>
+      <!--所有音樂-->
+      <div class="mt-10 mb-16 mb-lg-20">
+        <!-- <div class="container">
+          <div class="row">
+            <ul class="w-100 mb-6">
+              <li class="border-bottom border-gray-200 pb-1 d-flex">
+                <div style="width: 76px" class="me-6"></div>
+                <div class="col-7 text-gray-400">標題</div>
+                <div class="col-2"></div>
+                <div class="col-1 text-gray-400 d-none d-md-block">時間</div>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
                 </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+              <li class="d-flex align-items-center py-3">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
+                <div class="col-7">
+                  <p class="my-0 py-0 mb-1">八寶公主</p>
+                  <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
+                </div>
+                <div class="d-md-flex col-2 d-none d-md-block">
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2 list-icon" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">favorite_border</span>
+                  </button>
+                  <button class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 28px;height:28px;">
+                    <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
+                  </button>
+                </div>
+                <p class="col-1 d-none d-md-block">3:12</p>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="container">
+          <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">所有音樂</h2>
+          <div class="music-rank-all">
+            <table class="table align-middle text-center table-hover">
+              <thead>
+                <tr class="text-gray-400">
+                  <td></td>
+                  <td class="text-start table-full">歌曲名稱</td>
+                  <td class="table-hidden text-end"></td>
+                  <td class="text-end table-hidden">播放數</td>
+                  <td class="table-hidden">
+                    <span class="material-icons align-middle fs-5 mb-1">schedule</span>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">八寶公主</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">A Root 同根生</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">51,167</td>
+                  <td class="table-hidden">3:12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-2.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">你早已不在我身旁 (溫柔版)</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">八青哥</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">48,167</td>
+                  <td class="table-hidden">4:52</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-3.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">人生公開說明書</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Traveller旅人</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </button>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">43,217</td>
+                  <td class="table-hidden">5:21</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-4.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">反烏托邦 Dystopia</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">昴宿 Pleiades</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </button>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">34,573</td>
+                  <td class="table-hidden">4:48</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-5.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">離開台北市我裸體</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">NeaR Band 你家附近的阿伯</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">31,244</td>
+                  <td class="table-hidden">3:42</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-6.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">今天沒呼吸的心情</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">森森鈴蘭Lily_linglan</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">29,345</td>
+                  <td class="table-hidden">5:12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-7.jpg" class="hot-img rounded-4" alt="">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">給你的光</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">自言自語Murmur</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">27,495</td>
+                  <td class="table-hidden">4:32</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-8.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">你以外的日常(ft. 理想混蛋 雞丁)</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Who Cares 胡凱兒</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">22,346</td>
+                  <td class="table-hidden">3:36</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-9.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">失落樂園</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Annie 張苡宸</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">18,493</td>
+                  <td class="table-hidden">3:56</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-10.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">也許啊 Maybe</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">鄒序 hogan</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">16,342</td>
+                  <td class="table-hidden">4:05</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-1.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">八寶公主是一首歌曲名稱很長很長很長的歌，八寶公主是一首歌曲名稱很長很長很長的歌</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">A Root 同根生</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">51,167</td>
+                  <td class="table-hidden">3:12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-2.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">你早已不在我身旁 (溫柔版)</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">八青哥</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">48,167</td>
+                  <td class="table-hidden">4:52</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-3.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">人生公開說明書</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Traveller旅人</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">43,217</td>
+                  <td class="table-hidden">5:21</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-4.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">反烏托邦 Dystopia</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">昴宿 Pleiades</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">34,573</td>
+                  <td class="table-hidden">4:48</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-5.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">離開台北市我裸體</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">NeaR Band 你家附近的阿伯</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">31,244</td>
+                  <td class="table-hidden">3:42</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-6.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">今天沒呼吸的心情</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">森森鈴蘭Lily_linglan</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">29,345</td>
+                  <td class="table-hidden">5:12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-7.jpg" class="hot-img rounded-4" alt="">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">給你的光</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">自言自語Murmur</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">27,495</td>
+                  <td class="table-hidden">4:32</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-8.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">你以外的日常(ft. 理想混蛋 雞丁)</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Who Cares 胡凱兒</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">22,346</td>
+                  <td class="table-hidden">3:36</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-9.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">失落樂園</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">Annie 張苡宸</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">18,493</td>
+                  <td class="table-hidden">3:56</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../assets/images/hot-10.jpg" class="hot-img rounded-4" alt="song-cover">
+                  </td>
+                  <td class="text-start">
+                    <h3 class="fs-4h mb-1 ellipsis-1"><a href="#">也許啊 Maybe</a></h3>
+                    <p><a href="#" class="fs-4 text-gray-400">鄒序 hogan</a></p>
+                  </td>
+                  <td class="table-hidden">
+                    <div class="d-flex gap-2 justify-content-end">
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">add</span>
+                      </butto>
+                      <butto class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">play_arrow</span>
+                      </butto>
+                    </div>
+                  </td>
+                  <td class="text-end table-hidden">16,342</td>
+                  <td class="table-hidden">4:05</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+
+      <!--你可能也喜歡-->
+      <div class="mb-16 mb-lg-20">
+        <div class="container">
+          <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">你可能也喜歡</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
+                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="w-100 object-fit-cover object-position-10 more-img">
+                <h4 class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
+                  華語
+                  <br>
+                  金曲
+                </h4>
+                <div class="position-absolute bottom-0 start-0">
+                  <span class="material-icons play-btn">
+                    play_circle_filled
+                  </span>
+                </div>
+              </a>
             </div>
-            <!--所有音樂-->
-            <div class="mt-10 mb-16 mb-lg-20">
-                <div class="container">
-                    <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">所有音樂</h2>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
+                <img src="/assets/images/music-type-5.jpg" alt="專輯封面" class="w-100 object-fit-cover object-position-10 more-img">
+                <h4 class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
+                  我愛
+                  <br>
+                  K歌
+                </h4>
+                <div class="position-absolute bottom-0 start-0">
+                  <span class="material-icons play-btn">
+                    play_circle_filled
+                  </span>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <ul class="w-100 mb-6">
-                            <li class="border-bottom border-gray-200 pb-1 d-flex">
-                                <div style="width: 76px" class="me-6"></div>
-                                <div class="col-7 text-gray-400">標題</div>
-                                <div class="col-2"></div>
-                                <div class="col-1 text-gray-400 d-none d-md-block">時間</div>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                            <li class="d-flex align-items-center py-3">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面" class="col-2 rounded-4 hot-img me-6">
-                                <div class="col-7">
-                                    <p class="my-0 py-0 mb-1">八寶公主</p>
-                                    <p class="text-gray-400 mb-0 py-0">A Root 同根生</p>
-                                </div>
-                                <div class="d-md-flex col-2 d-none d-md-block">
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center me-2 list-icon"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200"
-                                            style="font-size: 20px;">favorite_border</span>
-                                    </button>
-                                    <button
-                                        class="border border-gray-200 rounded-circle bg-white d-flex justify-content-center align-items-center"
-                                        style="width: 28px;height:28px;">
-                                        <span class="material-icons text-gray-200" style="font-size: 20px;">add</span>
-                                    </button>
-                                </div>
-                                <p class="col-1 d-none d-md-block">3:12</p>
-                            </li>
-                        </ul>
-
-                    </div>
-
-
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
+                <img src="/assets/images/music-musican-9.jpg" alt="專輯封面" class="w-100 object-fit-cover object-position-10 more-img">
+                <h4 class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
+                  上班
+                  <br>
+                  輕聽
+                </h4>
+                <div class="position-absolute bottom-0 start-0">
+                  <span class="material-icons play-btn">
+                    play_circle_filled
+                  </span>
                 </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
+                <img src="/assets/images/music-type-7.jpg" alt="專輯封面" class="w-100 object-fit-cover object-position-10 more-img">
+                <h4 class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
+                  情歌
+                  <br>
+                  精選
+                </h4>
+                <div class="position-absolute bottom-0 start-0">
+                  <span class="material-icons play-btn">
+                    play_circle_filled
+                  </span>
+                </div>
+              </a>
             </div>
 
-            <!--你可能也喜歡-->
-            <div class="mb-16 mb-lg-20">
-                <div class="container">
-                    <h2 class="fs-4h text-center text-lg-start mb-4 mb-lg-10">你可能也喜歡</h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-md-3 mb-4">
-                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
-                                <img src="/assets/images/hot-1.jpg" alt="專輯封面"
-                                    class="w-100 object-fit-cover object-position-10 more-img">
-                                <h4
-                                    class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
-                                    華語
-                                    <br>
-                                    金曲
-                                </h4>
-                                <div class="position-absolute bottom-0 start-0">
-                                    <span class="material-icons play-btn">
-                                        play_circle_filled
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4">
-                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
-                                <img src="/assets/images/music-type-5.jpg" alt="專輯封面"
-                                    class="w-100 object-fit-cover object-position-10 more-img">
-                                <h4
-                                    class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
-                                    我愛
-                                    <br>
-                                    K歌
-                                </h4>
-                                <div class="position-absolute bottom-0 start-0">
-                                    <span class="material-icons play-btn">
-                                        play_circle_filled
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
-                                <img src="/assets/images/music-musican-9.jpg" alt="專輯封面"
-                                    class="w-100 object-fit-cover object-position-10 more-img">
-                                <h4
-                                    class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
-                                    上班
-                                    <br>
-                                    輕聽
-                                </h4>
-                                <div class="position-absolute bottom-0 start-0">
-                                    <span class="material-icons play-btn">
-                                        play_circle_filled
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <a href="#" class="d-block rounded-20 rounded-lg-30 position-relative overflow-hidden">
-                                <img src="/assets/images/music-type-7.jpg" alt="專輯封面"
-                                    class="w-100 object-fit-cover object-position-10 more-img">
-                                <h4
-                                    class="position-absolute text-primary text-center position-absolute bottom-0 end-0 fs-10">
-                                    情歌
-                                    <br>
-                                    精選
-                                </h4>
-                                <div class="position-absolute bottom-0 start-0">
-                                    <span class="material-icons play-btn">
-                                        play_circle_filled
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+          </div>
+        </div>
 
 
-        </main>
+    </main>
 
 
 
 
-        <%- include('./layout/footer'); -%>
+    <%- include('./layout/footer'); -%>
 
-            <script type="module" src="../main.js"></script>
+      <script type="module" src="../main.js"></script>
 </body>
 
 </html>
