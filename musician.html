@@ -6,8 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAnCAYAAACIVoEIAAAACXBIWXMAAAsSAAALEgHS3X78AAADw0lEQVRYhe1YO0hcQRQ9u65GDWIai9hosyzYuKCp3dYlgoE0bpEEAoYUISErJJW/LqDBTmIVAjFNIIKwViFrrYJCEHQbbZLCJmJcjVl94czOPN+bmf3p+ilyYGHfvJk7Z869c+/MCziOg0qQceL9AGLy11lg6BqANH/hQGrOeFsCZZHKOPF2AC8APALQbHQojl0A7wFMhQOpraI9JUqSyjjxUUmoUjI6diWxUeNNuaSkOnNFXHRW0LX9xVSzkso48aiMifOqUwhULRYOpFZt74NXQAjSdlrOZcCnlHTZ6gUT8oKKRXVX6krNXSIhyLmMlOGSkrus2kFdDjrl3C6E+67AbTp8blRKVSMPnQfNkoOAUupXIVLbGydYX8lhcT6HnR8nbntjUwDxRC16E3XGGC84Zjmdw1I6J2wpdMdCeDpW7+26Gw6kbglSmye9rGVfbMY+vzsSBouhLRLE0GSDIKnjw8QfLM7/NdrVuOGZRr35HmtlUBZWH9ZXjjE+eFCSkFJSnzi752B8MGu0+xft4PVAFo97fmNh9kg1Cy4GKU4y+fJAGNZhU4PY3/M/TyQPfK5SoDp02f0ndcK+Cgd6ZHrk0EfKlwamRw8NY8SDoRt486kRLa1GEUBHd437n6u2EWLs0V2MpdSsqeByPuY6oSdPyu0NZgWurKevViiVnKxHR1eeBJ9JVj1z9bYJSYQ2ID1h8wJE2OTDJaST0kFlvDuMz8m3DUY/yFi0TagIlQtXKRqzyd7TFzLaCmHLMp4qeV3e0mqPSy/c3lubpkGio6t8Utsbx0Zbe8Qfg3Q5Q6EY3BG2WMobMZoKYuen6TrbjqU72yLmhlGKBuVJEDctgyuFbQG2GCPRh8l6oy0SrfmuSKUFy9smc2JbcysnYcLj79ndfRHc7kotNmxxBsumuhMLoelW4KuPFOW0Sb30zZ/VlzxZngQXPrrZ2IgfnOYfXxsXopPqTYg4E1x8BZmJj9lVBwNT7Rr9Pd8xVymSrwayhstU8YbM/p6yIsAY603UnRZkSWoKwHM2sGbZUoMNnGx4psG35amMLBllQRJi1zF1/VLWpuRBS1R85pZSUKcDvexYjiRWcEHsJwmpCyvgvTjII+mIekG/ry8fG1JzUta6UrmGLmTc6OcoliSO185hY95Lqn6bWb2Cc/paOJDyXbX07dKv3HhJ2JVzoiApeXCPXRIxdUs2ru9GYpFX6YsmVtm13UMsqkpQlbEmr1NWQij0gcOLa/UpSCPWLj+YnYVc9T+aWQhej8+Llw1roP8npQPAP5rGz/621pPuAAAAAElFTkSuQmCC" type="image/x-icon" />    <title>coMusic | 音樂人</title>
-  <script type="module" crossorigin src="/coMusic/assets/main-9402085d.js"></script>
-  <link rel="stylesheet" href="/coMusic/assets/main-7d9493db.css">
+  <script type="module" crossorigin src="/coMusic/assets/main-31bac23d.js"></script>
+  <link rel="stylesheet" href="/coMusic/assets/main-d3848676.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
 
       <!-- 待補：連結 -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto gap-4">
           <li class="nav-item">
             <a class="nav-link" href="search.html">探索</a>
           </li>
@@ -47,7 +47,7 @@
             <a class="nav-link" href="charts.html">排行榜</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">歌單</a>
+            <a class="nav-link" href="playlist.html">歌單</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="musician.html">音樂人</a>
@@ -89,7 +89,7 @@
     <ul class="d-flex flex-column mb-4">
       <li class="border-bottom"><a href="search.html" class="d-block py-4 text-center text-black">探索</a></li>
       <li class="border-bottom"><a href="charts.html" class="d-block py-4 text-center text-black">排行榜</a></li>
-      <li class="border-bottom"><a href="#" class="d-block py-4 text-center text-black">歌單</a></li>
+      <li class="border-bottom"><a href="playlist.html" class="d-block py-4 text-center text-black">歌單</a></li>
       <li class="border-bottom"><a href="musician.html" class="d-block py-4 text-center text-black">音樂人</a></li>
     </ul>
 
@@ -117,137 +117,276 @@
               <div class="col-lg-7 order-1" style="z-index: 2">
                 <div class="pt-19">
                   <h2 class="fs-8 mb-8 text-center text-lg-start">你最喜歡的音樂人</h2>
-                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
-                    <li class="col-8 d-lg-none">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/surprise-ef2ec2d7.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">沈默紳士</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musician-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-1-523fe8d1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">自由人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-2-491c50a9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">沈默紳士</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-3-12da2b12.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">想見旅人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-4-c79668a1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">白話木木</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-5-11f103c9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">時空旅人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-6-d81eb47d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">自言自語</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-7-1ef8ed8b.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">繆思</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-8-696c5f53.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">abc創作</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-9-406a95fe.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">集集音響</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">未知過敏原</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">森森鈴蘭</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">皺序</h3>
-    </div>
-  </a>
-</li>                  </ul>
+                  <div class="musician-favorite">
+                    <div class="favorite-list">
+  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+    <li class="col-8 d-lg-none">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/surprise-ef2ec2d7.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">沈默紳士</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-1-523fe8d1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">自由人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-2-491c50a9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">沈默紳士</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-3-12da2b12.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">想見旅人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-4-c79668a1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">白話木木</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-5-11f103c9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">時空旅人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-6-d81eb47d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">自言自語</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-7-1ef8ed8b.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">繆思</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-8-696c5f53.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">abc創作</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-9-406a95fe.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">集集音響</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">未知過敏原</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">森森鈴蘭</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">皺序</h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="recommed-list">
+  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+    <li class="col-8 d-lg-none">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-13-4063157d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">八三二十五</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-15-e71a9e1c.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">巧立克</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-16-686b33f8.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">刺瑰啊</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-17-5a939fcf.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">默默無聞</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-18-6c190ef5.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">早起的鳥</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-19-28bf076a.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">腦袋一片白</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-20-33f6f3ef.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">花言巧語</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-21-ad1cb253.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">撒旦</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-22-cc49b4b4.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">鼓鼓</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-23-3c6c5358.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">藍味兒</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-24-875fa713.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">烏雅</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-25-57ecbe80.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">心心</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-26-5adf5ebd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">宙斯</h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>                  </div>
                 </div>
               </div>
               <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
@@ -258,7 +397,7 @@
                   </div>
                   <div class="px-4">
                     <h3 class="mb-2 d-block text-black fs-8 fw-600">沈默紳士<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
-                    <p class="text-justify multiline-ellipsis mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                    <p class="text-justify ellipsis-3 mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
                     <a href="musician-info.html" class="mb-2 stretched-link text-secondary d-block text-end">查看更多</a>
                   </div>
                 </div>
@@ -274,148 +413,287 @@
               <div class="col-lg-7" style="z-index: 2">
                 <div class="pt-19">
                   <h2 class="fs-8 mb-8 text-center text-lg-start">推薦音樂人</h2>
-                  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
-                    <li class="col-8 d-lg-none">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/surprise-ef2ec2d7.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">沈默紳士</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musician-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-1-523fe8d1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">自由人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-2-491c50a9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">沈默紳士</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-3-12da2b12.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">想見旅人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-4-c79668a1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">白話木木</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-5-11f103c9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">時空旅人</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-6-d81eb47d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">自言自語</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-7-1ef8ed8b.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">繆思</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-8-696c5f53.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">abc創作</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-9-406a95fe.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">集集音響</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">未知過敏原</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">森森鈴蘭</h3>
-    </div>
-  </a>
-</li>
-<li class="col" data-aos="fade-up">
-  <a href="musican-info.html" class="d-block">
-    <div class="musican-touch p-2">
-      <div class="rounded-circle overflow-hidden mb-4">
-        <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
-      </div>
-      <h3 class="text-center fs-5">皺序</h3>
-    </div>
-  </a>
-</li>                  </ul>
+                  <div class="musician-recommed">
+                    <div class="favorite-list">
+  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+    <li class="col-8 d-lg-none">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/surprise-ef2ec2d7.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">沈默紳士</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-1-523fe8d1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">自由人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-2-491c50a9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">沈默紳士</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-3-12da2b12.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">想見旅人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-4-c79668a1.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">白話木木</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-5-11f103c9.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">時空旅人</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-6-d81eb47d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">自言自語</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-7-1ef8ed8b.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">繆思</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-8-696c5f53.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">abc創作</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-9-406a95fe.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">集集音響</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">未知過敏原</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">森森鈴蘭</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">皺序</h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="recommed-list">
+  <ul class="row row-cols-2 row-cols-lg-3 gy-4 justify-content-center justify-content-lg-start">
+    <li class="col-8 d-lg-none">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-13-4063157d.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">八三二十五</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-15-e71a9e1c.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">巧立克</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-16-686b33f8.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">刺瑰啊</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-17-5a939fcf.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">默默無聞</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-18-6c190ef5.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">早起的鳥</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-19-28bf076a.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">腦袋一片白</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-20-33f6f3ef.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">花言巧語</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-21-ad1cb253.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">撒旦</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-22-cc49b4b4.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">鼓鼓</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-23-3c6c5358.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">藍味兒</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-24-875fa713.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">烏雅</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-25-57ecbe80.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">心心</h3>
+        </div>
+      </a>
+    </li>
+    <li class="col" data-aos="fade-up">
+      <a href="musician-info.html" class="d-block">
+        <div class="musican-touch p-2">
+          <div class="rounded-circle overflow-hidden mb-4">
+            <img src="/coMusic/assets/music-musican-26-5adf5ebd.jpg" style="aspect-ratio: 1/1;" class="w-100 object-fit-cover" alt="musician">
+          </div>
+          <h3 class="text-center fs-5">宙斯</h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>                  </div>
                 </div>
               </div>
               <div class="col-lg-4 d-none d-lg-block" style="z-index: 2">
                 <div class="pt-19 position-sticky top-0 musican-touch">
                   <div style="height: 400px;" class="overflow-hidden rounded-30 position-relative mb-4">
-                    <img class="w-100 h-100 object-fit-cover object-position-center" src="/coMusic/assets/surprise-ef2ec2d7.jpg" alt="">
+                    <img class="w-100 h-100 object-fit-cover object-position-top" src="/coMusic/assets/music-musican-13-4063157d.jpg" alt="musician">
                     <span class="position-absolute top-0 end-0 bg-primary me-8 pt-4 px-2 pb-2 fw-600" style="border-radius: 0 0 10px 10px;">本月強力推薦</span>
                   </div>
                   <div class="px-4">
-                    <h3 class="mb-2 d-block text-black fs-8 fw-600">沈默紳士<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
-                    <p class="text-justify multiline-ellipsis mb-2">曲風以POP ROCK為主，以生活周遭發生的大小事作為創作靈感來源。成團至今已邁入第三年，也累積數首創作。於2021/12/18在街聲發表首支單曲-最後一根稻草的請求The Last Demand，寫出被網路霸凌者的心聲，得到不錯的迴響！</p>
+                    <h3 class="mb-2 d-block text-black fs-8 fw-600">八三二十五<span class="bi bi-check-circle-fill ms-2 text-secondary fs-6"></span></h3>
+                    <p class="text-justify ellipsis-3 mb-2">深具獨特魅力的歌手，他的音樂風格糅合了多種元素，將流行、搖滾、以及情感深刻的歌詞融為一體，呈現出令人難以忘懷的音樂體驗。他的音樂作品多才多藝，時而充滿能量，時而溫柔感人，總能觸動聽眾的心靈。</p>
                     <a href="musician-info.html" class="mb-2 stretched-link text-secondary d-block text-end">查看更多</a>
                   </div>
                 </div>
@@ -424,144 +702,146 @@
           </div>
         </div>
 
-        <!-- 音樂人物誌 -->
+        <!-- 音樂人專欄 -->
         <div class="pb-16 pb-lg-24">
           <div class="container pt-19">
-            <h2 class="fs-8 mb-8 text-center text-lg-start">音樂人物誌</h2>
-            <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
-              <li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/17</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">艾莉西亞的勵志之旅：音樂天后的故事</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+            <h2 class="fs-8 mb-8 text-center text-lg-start">音樂人專欄</h2>
+            <div>
+  <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/17</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">艾莉西亞的勵志之旅：音樂天后的故事</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">探索格萊美獲獎歌手艾莉西亞·凱斯的生平旅程，從她在紐約的小城市開始，一直到成為音樂界的傳奇天后。這篇文章將帶您走進她的音樂才華、勵志成就以及如何影響世界的力量。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">探索格萊美獲獎歌手艾莉西亞·凱斯的生平旅程，從她在紐約的小城市開始，一直到成為音樂界的傳奇天后。這篇文章將帶您走進她的音樂才華、勵志成就以及如何影響世界的力量。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>
+    </li>
 
-<li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/10</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">約翰傳奇：勵志音樂與人生</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/10</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">約翰傳奇：勵志音樂與人生</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">約翰·傳奇不僅是一位出色的音樂家，還是一個生活的榜樣。這篇簡介將探討他的音樂如何啟發人們，並深入了解他在面對挑戰時如何繼續前進，成為一位真正的勵志人物。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">約翰·傳奇不僅是一位出色的音樂家，還是一個生活的榜樣。這篇簡介將探討他的音樂如何啟發人們，並深入了解他在面對挑戰時如何繼續前進，成為一位真正的勵志人物。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>
+    </li>
 
-<li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/03</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">泰勒的勵志音樂革命：歌手的心聲</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/03</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">泰勒的勵志音樂革命：歌手的心聲</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">泰勒·斯威夫特以其深刻的歌詞和多樣化的音樂風格而聞名，她的音樂帶有強烈的勵志元素。這篇文章將深入挖掘她如何通過音樂表達情感，並探討她的音樂如何在人們的生活中引起共鳴。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">泰勒·斯威夫特以其深刻的歌詞和多樣化的音樂風格而聞名，她的音樂帶有強烈的勵志元素。這篇文章將深入挖掘她如何通過音樂表達情感，並探討她的音樂如何在人們的生活中引起共鳴。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>
+    </li>
 
-<li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/17</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">艾莉西亞的勵志之旅：音樂天后的故事</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/17</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">艾莉西亞的勵志之旅：音樂天后的故事</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">探索格萊美獲獎歌手艾莉西亞·凱斯的生平旅程，從她在紐約的小城市開始，一直到成為音樂界的傳奇天后。這篇文章將帶您走進她的音樂才華、勵志成就以及如何影響世界的力量。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">探索格萊美獲獎歌手艾莉西亞·凱斯的生平旅程，從她在紐約的小城市開始，一直到成為音樂界的傳奇天后。這篇文章將帶您走進她的音樂才華、勵志成就以及如何影響世界的力量。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-10-6b387cfd.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>
+    </li>
 
-<li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/10</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">約翰傳奇：勵志音樂與人生</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/10</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">約翰傳奇：勵志音樂與人生</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">約翰·傳奇不僅是一位出色的音樂家，還是一個生活的榜樣。這篇簡介將探討他的音樂如何啟發人們，並深入了解他在面對挑戰時如何繼續前進，成為一位真正的勵志人物。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">約翰·傳奇不僅是一位出色的音樂家，還是一個生活的榜樣。這篇簡介將探討他的音樂如何啟發人們，並深入了解他在面對挑戰時如何繼續前進，成為一位真正的勵志人物。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-11-2758fffb.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>
+    </li>
 
-<li class="col">
-  <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
-    <div class="py-6 px-8 flex-grow-1 border-bottom">
-      <span class="d-block mb-2 font-jost">2023/09/03</span>
-      <div class="d-flex">
-        <h3 class="fs-6 me-6">泰勒的勵志音樂革命：歌手的心聲</h3>
-        <a href="#" class="stretched-link">
-          <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
-        </a>
+    <li class="col">
+      <div data-aos="zoom-in-up" class="h-100 d-flex flex-column rounded-30 overflow-hidden shadow position-relative box-hover musican-touch">
+        <div class="py-6 px-8 flex-grow-1 border-bottom">
+          <span class="d-block mb-2 font-jost">2023/09/03</span>
+          <div class="d-flex">
+            <h3 class="fs-6 me-6">泰勒的勵志音樂革命：歌手的心聲</h3>
+            <a href="#" class="stretched-link">
+              <i class="bi bi-arrow-up-right-circle-fill d-block text-primary fs-10"></i>
+            </a>
+          </div>
+        </div>
+        <div class="py-4 px-8">
+          <p class="multiline-ellipsis text-justify">泰勒·斯威夫特以其深刻的歌詞和多樣化的音樂風格而聞名，她的音樂帶有強烈的勵志元素。這篇文章將深入挖掘她如何通過音樂表達情感，並探討她的音樂如何在人們的生活中引起共鳴。</p>
+        </div>
+        <div class="pb-4 px-4">
+          <div class="rounded-30 overflow-hidden">
+            <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" class="article-img w-100 object-fit-cover" alt="article">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="py-4 px-8">
-      <p class="multiline-ellipsis text-justify">泰勒·斯威夫特以其深刻的歌詞和多樣化的音樂風格而聞名，她的音樂帶有強烈的勵志元素。這篇文章將深入挖掘她如何通過音樂表達情感，並探討她的音樂如何在人們的生活中引起共鳴。</p>
-    </div>
-    <div class="pb-4 px-4">
-      <div class="rounded-30 overflow-hidden">
-        <img src="/coMusic/assets/music-musican-12-5641e6be.jpg" class="article-img w-100 object-fit-cover" alt="article">
-      </div>
-    </div>
-  </div>
-</li>            </ul>
-            <div class="mt-12 d-flex justify-content-center">
-              <nav aria-label="Page navigation">
+    </li>
+  </ul>
+</div>              <div class="mt-12 d-flex justify-content-center">
+                <nav aria-label="Page navigation">
   <ul class="pagination gap-3">
     <li class="page-item"><a class="page-link rounded-2 d-flex align-items-center justify-content-center" href="#" aria-label="Previous" style="width: 32px;"><i class="bi bi-arrow-left-short fs-5" aria-hidden="true"></i></a></li>
     <li class="page-item active"><a class="page-link rounded-2 d-flex align-items-center justify-content-center fs-5" href="#" style="width: 32px;">1</a></li>
@@ -569,13 +849,41 @@
     <li class="page-item"><a class="page-link rounded-2 d-flex align-items-center justify-content-center fs-5" href="#" style="width: 32px;">3</a></li>
     <li class="page-item"><a class="page-link rounded-2 d-flex align-items-center justify-content-center" href="#" aria-label="Next" style="width: 32px;"><i class="bi bi-arrow-right-short fs-5" aria-hidden="true"></i></a></li>
   </ul>
-</nav>            </div>
+</nav>              </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="bg-gray-800">
+    <div class="container-fluid position-fixed bottom-0 d-none d-lg-block" style="z-index: 100;">
+  <div class="row justify-content-end">
+    <div class="col-12 col-lg-4 col-xxl-3">
+      <div class="bg-white rounded-top-10 shadow overflow-hidden">
+        <div class="progress w-100" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+        </div>
+        <div class="pt-3 p-2">
+          <div class="row g-0">
+            <div class="col-3">
+              <img src="/coMusic/assets/surprise-ef2ec2d7.jpg" style="height: 72px" class="w-100 rounded-10 object-fit-cover" alt="music">
+            </div>
+            <div class="col-9">
+              <div class="d-flex align-items-center justify-content-between h-100 px-4">
+                <div class="d-flex flex-column justify-content-center">
+                  <p><a href="#">這是歌的標題</a></p>
+                  <p><a href="#" class="text-gray-600">沈默紳士</a></p>
+                </div>
+                <button class="btn p-0">
+                  <i class="bi bi-play-circle-fill fs-9 text-secondary"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    <footer class="bg-gray-800">
   <div class="container py-5 py-lg-10">
     <div class="row">
       <div class="col-12 col-lg-6">
