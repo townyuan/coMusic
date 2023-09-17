@@ -68,7 +68,54 @@
             </div>
             <div class="col-lg-5">
               <div data-aos="fade-left" class="index-today">
-                <%- include('./components/music-card'); -%>
+                <div class="d-flex flex-column gap-4">
+                  <!-- index 今日推薦 -->
+                  <div class="border border-gray-200 rounded-5 p-8 d-flex flex-column">
+                    <h2 class="fs-6 mb-4">今日推薦</h2>
+                    <img src="../assets/images/today.jpg" class="today-img w-100 object-fit-cover mb-4 rounded-20" alt="today">
+                    <div class="d-flex">
+                      <div>
+                        <h3 class="mb-2 fs-5 text-justify ellipsis-2">今天可不可以不回家</h3>
+                        <p class="text-gray-400 ellipsis-1">LUCKY-RIRI</p>
+                      </div>
+                      <div class="ms-auto d-flex gap-2 mb-4">
+                        <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </button>
+                        <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="search.html" class="mt-4 h-100 btn-base btn-main">點我聽更多</a>
+                  </div>
+              
+                  <!-- index 來點驚喜 -->
+                  <div class="border border-gray-200 rounded-5 p-8 d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                      <h2 class="fs-6 mb-4">來點驚喜...</h2>
+                      <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                        <span class="material-icons" style="font-size: 20px;">shuffle</span>
+                      </button>
+                    </div>
+                    <img src="../assets/images/surprise.jpg" class="today-img w-100 object-fit-cover mb-4 rounded-20" alt="">
+                    <div class="d-flex">
+                      <div class="me-3">
+                        <h3 class="mb-2 fs-5 text-justify ellipsis-2">巴賴Balai（排灣傳統織布時尚服裝秀_走秀混音作品）</h3>
+                        <p class="text-gray-400 ellipsis-1">巴賴 (Balai)</p>
+                      </div>
+                      <div class="ms-auto d-flex gap-2 mb-4">
+                        <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
+                        </button>
+                        <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
+                          <span class="material-icons" style="font-size: 20px;">add</span>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="search.html" class="mt-4 h-100 btn-base btn-main">點我聽更多</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -226,16 +273,16 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-1.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
+                        <p class="fs-6">小美</p>
                         <span class="text-gray-400">27分鐘前</span>
                       </div>
                     </div>
                     <p class="my-4">太好聽了吧！我要哭了QQ</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-1.jpg" alt="music">
                         <div class="ms-6">
                           <p class="mb-1 fs-4h">也許啊 Maybe</p>
                           <p class="mb-1 text-gray-600">皺序 hogan</p>
@@ -260,19 +307,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-2.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">德華</p>
+                        <span class="text-gray-400">30分鐘前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">夭壽，這個辣抹好聽不推不行！</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-2.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">只是聽聽</p>
+                          <p class="mb-1 text-gray-600">八三二十五</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -294,19 +341,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-3.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">安久拉</p>
+                        <span class="text-gray-400">36分鐘前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">欸不是，這麼好聽是要別的歌手怎麼生存</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-3.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">你知道嗎？歌名超難想</p>
+                          <p class="mb-1 text-gray-600">就是我</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -328,19 +375,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-4.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">耶呼</p>
+                        <span class="text-gray-400">40分鐘前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">真的推這首音樂</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-4.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">我正在想下一首的歌名是什麼</p>
+                          <p class="mb-1 text-gray-600">頭痛</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -362,19 +409,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-5.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">掰name</p>
+                        <span class="text-gray-400">55分鐘前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">推推 👍👍👍</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-5.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">到了這，我還是想不出來</p>
+                          <p class="mb-1 text-gray-600">這個也很難</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -396,19 +443,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-6.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">德古拉</p>
+                        <span class="text-gray-400">1小時前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">OMG，這個超好聽欸</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-6.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">所以說會串接很重要</p>
+                          <p class="mb-1 text-gray-600">你看不到</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -430,19 +477,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-7.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">Tami</p>
+                        <span class="text-gray-400">1小時前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">哦齁，這麼好聽怎麼辦拉～</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-7.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">想不到還是把我的名字搬出來</p>
+                          <p class="mb-1 text-gray-600">Tami</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -464,19 +511,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-8.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">yuan</p>
+                        <span class="text-gray-400">1小時前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">聽了非常有感觸</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-8.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">我也把隊友的名字搬出來</p>
+                          <p class="mb-1 text-gray-600">yuan</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -498,19 +545,19 @@
                 <div class="card rounded-30">
                   <div class="p-4">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/recommed-1.jpg" alt="劉德華">
+                      <img class="rounded-circle" style="height: 80px; width:80px;" src="../assets/images/music-musican-9.jpg" alt="user">
                       <div class="ms-8">
-                        <p class="fs-6">劉德華</p>
-                        <span class="text-gray-400">27分鐘前</span>
+                        <p class="fs-6">安安</p>
+                        <span class="text-gray-400">2小時前</span>
                       </div>
                     </div>
-                    <p class="my-4">太好聽了吧！我要哭了QQ</p>
+                    <p class="my-4">音樂靈魂</p>
                     <div class="border border-gray-200 rounded-20 bg-gray-100 p-4">
                       <div class="d-flex align-items-center">
-                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/swiper-1.jpg" alt="">
+                        <img class="rounded-10" style="height: 76px; width: 76px;" src="../assets/images/music-9.jpg" alt="music">
                         <div class="ms-6">
-                          <p class="mb-1 fs-4h">也許啊 Maybe</p>
-                          <p class="mb-1 text-gray-600">皺序 hogan</p>
+                          <p class="mb-1 fs-4h">終於結束</p>
+                          <p class="mb-1 text-gray-600">給過</p>
                           <div class="d-flex gap-2">
                             <button class="co-icon border border-gray-200 rounded-circle d-flex justify-content-center align-items-center" style="width: 28px;height: 28px">
                               <span class="material-symbols-rounded" style="font-size: 18px;">favorite</span>
@@ -528,6 +575,7 @@
                   </div>
                 </div>
               </li>
+              
             </ul>
             <div class="swiper-pagination"></div>
           </div>

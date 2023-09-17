@@ -1,15 +1,15 @@
 .hit-img {
-    height: 300px;
+  height: 300px;
 
-    @include media-breakpoint-up(lg) {
-        height: 330px;
-    }
+  @include media-breakpoint-up(lg) {
+    height: 330px;
+  }
 }
 
 .play-btn {
-    font-size: 72px;
+  font-size: 72px;
 }
 
 .searchMore a:hover {
-    color: $primary;
+  color: $primary;
 }
